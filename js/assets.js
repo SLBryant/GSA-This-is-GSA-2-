@@ -29,6 +29,27 @@ $.fn.extend({
     }
 });
 function setSectionHeights(){
-    var height = $(window).height();
-    $('section').css('height',height)
+    var height = window.innerHeight - $('nav.sticky').height();
+    var padding = $('nav').height();
+    $('section').css({
+        'height':height,
+        'paddingTop':padding
+    });
+}
+function setWaypoints(){
+    var waypoints = $('section').waypoint({
+        handler: function(direction) {
+            var section = this.element.id;
+            $('nav a').removeClass('active');
+            $('nav a[data-section='+section+']').addClass('active');
+        },
+        offset: 150
+    });
+    //SCROLL BOTTOM
+    $(window).scroll(function() {
+        if($(window).scrollTop() + window.innerHeight >= $('body').height() - 100) {
+            $('nav a').removeClass('active');
+            $('nav a:last').addClass('active');
+        }
+    });
 }

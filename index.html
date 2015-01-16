@@ -1,6 +1,7 @@
-<script type="text/javascript" src="http://gsa.gov/resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/assets.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="css/app.css"/>
 <div class="main-container container">
@@ -456,7 +457,7 @@ $(function(){
 </script>
 
 </header>
-<section>
+<section id="main">
 	<div class="row">
 		<div class="col-md-6">
 	<small>Our Mission</small>
@@ -469,9 +470,14 @@ $(function(){
 </section>
 <nav class="sticky">
 	<a class="logo"><span class="logo-gsa">GSA</span></a>
-	<a>Welcome</a>
-	<a>Our Priorities</a>
-	<a>Who We Are</a>
-	<a>GSA Data</a>
+	<a data-section="welcome">Welcome</a>
+	<a data-section="our-priorities">Our Priorities</a>
+	<a data-section="who-we-are">Who We Are</a>
+	<a data-section="gsa-data">GSA Data</a>
 </nav>
+<section id="welcome"><h1>Welcome</h1></section>
+<section id="our-priorities"><h1>Our Priorities</h1></section>
+<section id="who-we-are"><h1>Who We Are</h1></section>
+<section id="gsa-data"><h1>SA Data</h1></section>
+
 </div>

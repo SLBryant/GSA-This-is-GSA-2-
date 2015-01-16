@@ -23,6 +23,10 @@ nav a{
 	padding-top:16px;
 	border-left:1px solid #fff;
 }
+nav a.active{
+	background:#fff;
+	color:rgb(77,136,171);
+}
 nav a:hover{
 	color:#fff;
 	text-decoration: none;
