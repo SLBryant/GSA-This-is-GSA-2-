@@ -28,3 +28,7 @@ $.fn.extend({
         });  
     }
 });
+function setSectionHeights(){
+    var height = $(window).height();
+    $('section').css('height',height)
+}

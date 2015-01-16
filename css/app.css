@@ -28,11 +28,11 @@ nav a:hover{
 	text-decoration: none;
 }
 
-nav a.hero{
+nav a.logo{
 	padding-top:10px;
 }
 
-.hero-gsa:before{
+.logo-gsa:before{
 	content:'This is';
 	display:block;
 	color:#fff;
@@ -43,7 +43,7 @@ nav a.hero{
 	padding:1% 7%;
 
 }
-.hero-gsa{
+.logo-gsa{
 	padding-top:3.66%;
 	font-size:2.5em;
 	text-transform: uppercase;
