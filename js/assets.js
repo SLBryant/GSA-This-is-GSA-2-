@@ -29,12 +29,16 @@ $.fn.extend({
     }
 });
 function setSectionHeights(){
-    var height = window.innerHeight - $('nav.sticky').height();
+    var height = window.innerHeight - $('nav').height();
     var padding = $('nav').height();
     $('section').css({
         'height':height,
         'paddingTop':padding
     });
+    var mainHeight = height - $('header').height() - padding;
+    $('section#main').css({
+        'height':mainHeight
+    })
 }
 function setWaypoints(){
     var waypoints = $('section').waypoint({

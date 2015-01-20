@@ -4,6 +4,7 @@ body{
 .main-container{
 	box-shadow:1px 1px 10px #999;
 	background:#fff;
+	width:990px;
 }
 #superheader{
 	width:100%;
