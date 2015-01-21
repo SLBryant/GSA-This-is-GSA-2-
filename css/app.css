@@ -1,6 +1,9 @@
 body{
 	background-color:rgb(206,213,242);
 }
+header{
+	font-family: Arial,sans-serif;
+}
 .main-container{
 	box-shadow:1px 1px 10px #999;
 	background:#fff;
