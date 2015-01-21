@@ -19,11 +19,14 @@ function navigation(){
 	});
 }
 function updateNavPositionLeft(){
-	var containerOffset = $('.main-container').offset().left;
-	var containerWidth = $('.main-container').outerWidth()
-	var navWidth = $('nav').width();
-	var innerSpace = containerWidth - navWidth;
-	var innerOffset = innerSpace / 2
-	var newOffset = containerOffset + innerOffset;
-	$('nav').css('left',newOffset)
+	/*var offsetTop = $('nav').offset().top;
+	if( $(window).scrollTop() + 100 > offsetTop ){
+		var containerOffset = $('.main-container').offset().left;
+		var containerWidth = $('.main-container').outerWidth()
+		var navWidth = $('nav').width();
+		var innerSpace = containerWidth - navWidth;
+		var innerOffset = innerSpace / 2
+		var newOffset = containerOffset + innerOffset;
+		$('nav').css('left',newOffset)
+	}*/
 }
