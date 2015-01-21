@@ -1,4 +1,5 @@
-	$("#topnav ul li.tab").hoverIntent({
+function gsaHeader(){
+		$("#topnav ul li.tab").hoverIntent({
 		sensitivity: 7, // number = sensitivity threshold (must be 1 or higher)    
     	interval: 100, // number = milliseconds for onMouseOver polling interval    
     	timeout: 100, // number = milliseconds delay before onMouseOut   
@@ -60,3 +61,4 @@
 		$(this).fadeOut("fast");
 		$('.submenu').css({'display' : 'none'});
 	});
+}
