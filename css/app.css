@@ -36,6 +36,9 @@ nav a:hover{
 	color:#fff;
 	text-decoration: none;
 }
+nav a.active:hover{
+	color:rgb(77,136,171);
+}
 
 nav a.logo{
 	padding-top:10px;

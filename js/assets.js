@@ -18,7 +18,7 @@ $.fn.extend({
         var offsetTop = $(this).css('top');
         var width = $(this).width();
         var position = $(window).scrollTop();
-        var el = $(this)
+        var el = $(this);
         $(window).on('scroll', function() {
             if ($(window).scrollTop() > offsetTop) {
                 el.attr('style', 'position:fixed;top:'+offsetTop+';left:0px;width:' + width + 'px');
@@ -51,7 +51,7 @@ function setWaypoints(){
     });
     //SCROLL BOTTOM
     $(window).scroll(function() {
-        if($(window).scrollTop() + window.innerHeight >= $('body').height() - 100) {
+        if($(window).scrollTop() + window.innerHeight >= $('body').height() - 60) {
             $('nav a').removeClass('active');
             $('nav a:last').addClass('active');
         }

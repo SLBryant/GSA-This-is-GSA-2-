@@ -4,6 +4,10 @@ $(function(){
 	setWaypoints();
 	gsaHeader();
 	navigation();
+	$(window).resize(function(){
+		setSectionHeights();
+		updateNavPositionLeft();
+	});
 });
 
 function navigation(){
@@ -13,4 +17,13 @@ function navigation(){
 		    scrollTop: $('#'+sectionName).offset().top - 60
 		}, 1000);
 	});
+}
+function updateNavPositionLeft(){
+	var containerOffset = $('.main-container').offset().left;
+	var containerWidth = $('.main-container').outerWidth()
+	var navWidth = $('nav').width();
+	var innerSpace = containerWidth - navWidth;
+	var innerOffset = innerSpace / 2
+	var newOffset = containerOffset + innerOffset;
+	$('nav').css('left',newOffset)
 }
