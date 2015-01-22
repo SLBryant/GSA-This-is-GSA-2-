@@ -8,6 +8,10 @@ header{
 	box-shadow:1px 1px 10px #999;
 	background:#fff;
 	width:990px;
+    padding: 0;
+}
+.gray-section {
+    background: #edf0f5;
 }
 #superheader{
 	width:100%;
@@ -60,4 +64,9 @@ nav a.logo{
 	font-size:2.5em;
 	text-transform: uppercase;
 	position:relative;
+}
+
+.icon-block {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }

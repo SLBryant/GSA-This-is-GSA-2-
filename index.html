@@ -1,196 +1,230 @@
 <!doctype html>
 <html>
 <head>
-	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="js/assets.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript" src="js/gsa-header.js"></script>
-	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-	<script type="text/javascript" src="http://gsa.gov/resources/js/jquery.hoverIntent.minified.js"></script>
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/app.css"/>
-	<link rel="stylesheet" href="css/gsa-header.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/assets.js"></script>
+    <script type="text/javascript" src="js/gsa-header.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="http://gsa.gov/resources/js/jquery.hoverIntent.minified.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/gsa-header.css"/>
 </head>
 <body>
+<!-- START container -->
 <div class="main-container container">
+    <!-- GSA Standard Nav -->
+    <div id="gray" style="display: none;"></div>
+    <header id="banner" class="navbar has-main-shadow" role="banner">
+        <div class="gsa-navbar-inner span11">
+            <div id="superheader" class="clearfix">
+                <a href="http://gsa.gov/HDR_0_home" style=" float: left;"><img width="286" height="50" border="0" alt="GSA Logo" style="margin-top: 22px; margin-bottom: 22px;" src="http://gsa.gov/resources/images/GSAlogo.gif"></a>
+                <div id="GSAloginHeader">
+                    <ul>
+                        <li><a title="home" href="http://www.gsa.gov/HDR_0_home">Home</a></li>
+                        <li>|</li>
+                        <li><a title="newsroom" href="http://www.gsa.gov/newsroom">Newsroom</a></li>
+                        <li>|</li>
+                        <li><a title="Regions" href="http://www.gsa.gov/HDR_0_regions">Regions</a></li>
+                        <li>|</li>
+                        <li><a title="staff directory" href="http://www.gsa.gov/portal/staffDirectory/searchStaffDirectory">Staff Directory</a>
+                        </li> <li>|</li>
+                        <li><a title="Careers" href="http://www.gsa.gov/HDR_0_careers">Careers</a></li>
+                        <li>|</li>
+                        <li><a title="Forms" href="http://www.gsa.gov/portal/forms/type/TOP">Forms</a></li>
+                        <li>|</li>
+                        <li><a title="e-Tools" href="http://www.gsa.gov/HDR_0_etools">e-Tools</a></li>
+                        <li>|</li>
+                        <li><a title="QuickLinks" href="http://www.gsa.gov/HDR_0_quicklinks">QuickLinks</a></li>
+                    </ul>
+                </div>
+                <div class="clear"><img src="http://gsa.gov/resources/images/transparent.gif" height="1" alt=""></div>
 
-<div id="gray" style="display: none;"></div>
-<header id="banner" class="navbar has-main-shadow" role="banner">
-  <div class="gsa-navbar-inner span11">
-   	<div id="superheader" class="clearfix">
-	   	<a href="http://gsa.gov/HDR_0_home" style=" float: left;"><img width="286" height="50" border="0" alt="GSA Logo" style="margin-top: 22px; margin-bottom: 22px;" src="http://gsa.gov/resources/images/GSAlogo.gif"></a>
-		<div id="GSAloginHeader">
-           		 <ul>
-		 		 <li><a title="home" href="http://www.gsa.gov/HDR_0_home">Home</a></li>
-		 		 <li>|</li>
-		 		 <li><a title="newsroom" href="http://www.gsa.gov/newsroom">Newsroom</a></li>
-		 		 <li>|</li>
-		 		 <li><a title="Regions" href="http://www.gsa.gov/HDR_0_regions">Regions</a></li>
-		 		 <li>|</li>
-		 		 <li><a title="staff directory" href="http://www.gsa.gov/portal/staffDirectory/searchStaffDirectory">Staff Directory</a>
-		 		 </li> <li>|</li>
-		 		 <li><a title="Careers" href="http://www.gsa.gov/HDR_0_careers">Careers</a></li>
-		 		 <li>|</li>
-		 		 <li><a title="Forms" href="http://www.gsa.gov/portal/forms/type/TOP">Forms</a></li>
-		 		 <li>|</li>
-		 		 <li><a title="e-Tools" href="http://www.gsa.gov/HDR_0_etools">e-Tools</a></li>
-		 		 <li>|</li>
-		 		 <li><a title="QuickLinks" href="http://www.gsa.gov/HDR_0_quicklinks">QuickLinks</a></li>
-		 </ul>
-		</div>
-		<div class="clear"><img src="http://gsa.gov/resources/images/transparent.gif" height="1" alt=""></div>
+                <!-- top navigation -->
+                <div id="topnav">
+                    <ul>
+                        <li class="tab" id="gsa_offers">
+                            <a href="#" class="mainlk">What GSA Offers</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><h2><a href="http://gsa.gov/portal/category/20987">BUILDINGS &amp; REAL ESTATE</a></h2></li>
+                                    <li><a href="http://gsa.gov/HDR_1_Bldgs_design">Design &amp; Construction</a></li>
+                                    <li><a href="http://gsa.gov/HDR_1_Bldgs_environmental">Environmental Programs</a></li>
+                                    <li><a href="http://gsa.gov/HDR_1_Bldgs_properties">GSA Properties</a></li>
+                                    <li><a href="http://gsa.gov/HDR_1_Bldgs_historic">Historic Preservation</a></li>
+                                    <li><a href="http://gsa.gov/HDR_1_Bldgs_facilities">Facilities Management</a></li>
+                                    <li><a href="http://gsa.gov/HDR_1_Bldgs_realty">Realty Services</a></li>
+                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_1_Bldgs_workplace">WorkPlace Innovation</a></li>
+                                </ul>
+                                <ul>
+                                    <li><h2><a href="http://gsa.gov/portal/category/21027">PRODUCTS &amp; SERVICES</a></h2></li>
+                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_acquisition">Acquisition Solutions</a></li>
+                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_energy">Energy &amp; Environmental</a></li>
+                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_supplies">Facilities, Supplies, Equipment, &amp; Tools</a></li>
+                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_office">Office Supplies, Equipment, &amp; Furniture</a></li>
+                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_professional">Professional &amp; Technical Solutions</a></li>
+                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_property">Property for Disposal/Sale</a></li>
+                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_security">Security, Fire, &amp; Law Enforcement</a></li>
+                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_sharedsvcs">Shared Services</a></li>
+                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_technology">Technology &amp; Telecommunications</a></li>
+                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_transportation">Transportation, Relocation &amp; Vehicles</a></li>
+                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_2_Prdcts_travel">Travel</a></li>
+                                </ul>
+                                <ul>
+                                    <li><h2><a href="http://gsa.gov/portal/category/21219">POLICY &amp; REGULATIONS</a></h2></li>
+                                    <li><a href="http://gsa.gov/HDR_3_Plcy_regulations">Regulations: FMR, FTR, &amp; FAR</a></li>
+                                    <li><a href="http://gsa.gov/HDR_3_Plcy_acquisition">Acquisition Policy</a></li>
+                                    <li><a href="http://gsa.gov/HDR_3_Plcy_aircraft">Aircraft Management</a></li>
+                                    <li><a href="http://gsa.gov/HDR_3_Plcy_innovation">Collaboration &amp; Reports</a></li>
+                                    <li><a href="http://gsa.gov/HDR_3_Plcy_mail">Mail Management</a></li>
+                                    <li><a href="http://gsa.gov/HDR_3_Plcy_personal">Personal Property Management</a></li>
+                                    <li><a href="http://gsa.gov/HDR_3_Plcy_real">Real Property Management</a></li>
+                                    <li><a href="http://gsa.gov/HDR_3_Plcy_technology">Technology Strategy</a></li>
+                                    <li><a href="http://gsa.gov/HDR_3_Plcy_travel">Travel, Transportation, &amp; Relocation</a></li>
+                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_3_Plcy_vehicle">Vehicle Management</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li class="tab" id="business_gsa">
+                            <a href="#" class="mainlk">Doing Business with GSA</a>
+                            <div class="submenu" style="display: none;">
+                                <ul>
+                                    <li><h2><a href="http://gsa.gov/portal/category/20998">PURCHASING PROGRAMS</a></h2></li>
+                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_schedules">GSA Schedules</a></li>
+                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_tech">Technology Programs</a></li>
+                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_acquisition">Assisted Acquisition</a></li>
+                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_requisition">Requisition Programs</a></li>
+                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_fleet">GSA Fleet &amp; Automotive</a></li>
+                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_global">GSA Global Supply</a></li>
+                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_travel">GSA Travel Programs</a></li>
+                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_personal">Personal Property Management</a></li>
+                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_smartpay">SmartPay (Charge Card Services</a></li>
+                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_4_Prchsng_gettingstarted">Getting Started</a></li>
+                                </ul>
+                                <ul>
+                                    <li><h2><a href="http://gsa.gov/portal/category/21122">REAL ESTATE SERVICES</a></h2></li>
+                                    <li><a href="http://gsa.gov/HDR_5_RealEstScvs_opps">Finding Business Opportunities</a></li>
+                                    <li><a href="http://gsa.gov/HDR_5_RealEstScvs_cstmrs">For Federal Customers</a></li>
+                                    <li><a href="http://gsa.gov/HDR_5_RealEstScvs_workers">For Workers in Federal Buildings</a></li>
+                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_5_RealEstScvs_property">Property for Disposal/Sale</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li class="tab" id="learn_more">
+                            <a href="#" class="mainlk">Learn More</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><h2><a href="http://gsa.gov/portal/category/21023">HOW WE HELP</a></h2></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_govtcustomers">Government Customers</a></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_state">State and Local Governments</a></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_fedemployees">Federal Employees</a></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_businesses">Businesses</a></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_citizens">Citizens &amp; Consumers</a></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_disabilities">Americans with Disabilities</a></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_tribes">Native American Tribes</a></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_emergency">Emergency Response</a></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_support">Customer Support</a></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_presidential">Presidential Transition</a></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_recovery">Recovery Act</a></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_open">Open Government</a></li>
+                                    <li><a href="http://gsa.gov/HDR_6_Help_areasinterest">Areas of Interest</a></li>
+                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_6_Help_new">New to GSA?</a></li>
+                                </ul>
+                                <ul>
+                                    <li><h2><a href="http://gsa.gov/portal/category/20982">ABOUT GSA</a></h2></li>
+                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_background">Background &amp; History</a></li>
+                                    <li><a href="http://gsa.gov/portal/event/getEvents/">Events</a></li>
+                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_training">Training Programs</a></li>
+                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_organization">Organization</a></li>
+                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_careers">Careers</a></li>
+                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_reports">Budget, Performance, &amp; Agency Reports</a></li>
+                                    <li><a href="http://www.gsa.gov/portal/category/21418">Orders &amp; Directives</a></li>
+                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_reference">Reference</a></li>
+                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_catalogs">Catalogs, Publications, &amp; Newsletters</a></li>
+                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_socialmedia">Social Media</a></li>
+                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_7_Aboutgsa_staffdirectory">Staff Directory</a></li>
+                                </ul>
+                                <ul>
+                                    <li><h2><a href="http://gsa.gov/portal/category/26627">NEWSROOM</a></h2></li>
+                                    <li><a href="http://gsa.gov/HDR_8_News_releases">News Releases</a></li>
+                                    <li><a href="http://gsa.gov/HDR_8_News_photogalleries">Photo Galleries</a></li>
+                                    <li><a href="http://gsa.gov/HDR_8_News_videos">Videos</a></li>
+                                    <li><a href="http://gsa.gov/HDR_8_News_speeches">Speeches</a></li>
+                                    <li><a href="http://gsa.gov/HDR_8_News_congress">Congressional Testimony</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li class="tab" id="blogs">
+                            <a href="http://gsablogs.gsa.gov/gsablog" class="mainlk">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END GSA Standard NAV -->
 
-		 		 <div id="topnav">
-	 		 		 <ul>
-		 		 		 <li class="tab" id="gsa_offers">
-	 		  		 		  <a href="#" class="mainlk">What GSA Offers</a>
- 		  		 		  <div class="submenu">
- 	  		 		  		<ul>
- 		  		 		  	  <li><h2><a href="http://gsa.gov/portal/category/20987">BUILDINGS &amp; REAL ESTATE</a></h2></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_1_Bldgs_design">Design &amp; Construction</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_1_Bldgs_environmental">Environmental Programs</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_1_Bldgs_properties">GSA Properties</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_1_Bldgs_historic">Historic Preservation</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_1_Bldgs_facilities">Facilities Management</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_1_Bldgs_realty">Realty Services</a></li>
-	 		  		 		  <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_1_Bldgs_workplace">WorkPlace Innovation</a></li>
- 	 		  		 		  </ul> 
- 	 		  		 		<ul>
-	 		  		 		  <li><h2><a href="http://gsa.gov/portal/category/21027">PRODUCTS &amp; SERVICES</a></h2></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_2_Prdcts_acquisition">Acquisition Solutions</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_2_Prdcts_energy">Energy &amp; Environmental</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_2_Prdcts_supplies">Facilities, Supplies, Equipment, &amp; Tools</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_2_Prdcts_office">Office Supplies, Equipment, &amp; Furniture</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_2_Prdcts_professional">Professional &amp; Technical Solutions</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_2_Prdcts_property">Property for Disposal/Sale</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_2_Prdcts_security">Security, Fire, &amp; Law Enforcement</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_2_Prdcts_sharedsvcs">Shared Services</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_2_Prdcts_technology">Technology &amp; Telecommunications</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_2_Prdcts_transportation">Transportation, Relocation &amp; Vehicles</a></li>
-	 		  		 		  <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_2_Prdcts_travel">Travel</a></li>
- 		  		 		  	</ul>
- 		  		 		  	<ul>
-	 		  		 		  <li><h2><a href="http://gsa.gov/portal/category/21219">POLICY &amp; REGULATIONS</a></h2></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_3_Plcy_regulations">Regulations: FMR, FTR, &amp; FAR</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_3_Plcy_acquisition">Acquisition Policy</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_3_Plcy_aircraft">Aircraft Management</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_3_Plcy_innovation">Collaboration &amp; Reports</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_3_Plcy_mail">Mail Management</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_3_Plcy_personal">Personal Property Management</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_3_Plcy_real">Real Property Management</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_3_Plcy_technology">Technology Strategy</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_3_Plcy_travel">Travel, Transportation, &amp; Relocation</a></li>
-	        		 		  <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_3_Plcy_vehicle">Vehicle Management</a></li>
- 		  		 		  	</ul>
-          		 		 		 <div class="clear"></div>
- 		  		 		   </div>
- 		  		 </li>
- 		  		 <li class="tab" id="business_gsa">
- 		  		 		  <a href="#" class="mainlk">Doing Business with GSA</a>
- 		  		 		  <div class="submenu" style="display: none;">
- 		  		 		  	<ul>
-	 		  		 		  <li><h2><a href="http://gsa.gov/portal/category/20998">PURCHASING PROGRAMS</a></h2></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_4_Prchsng_schedules">GSA Schedules</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_4_Prchsng_tech">Technology Programs</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_4_Prchsng_acquisition">Assisted Acquisition</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_4_Prchsng_requisition">Requisition Programs</a></li>
-     		 		 		  <li><a href="http://gsa.gov/HDR_4_Prchsng_fleet">GSA Fleet &amp; Automotive</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_4_Prchsng_global">GSA Global Supply</a></li>
-     		 		 		  <li><a href="http://gsa.gov/HDR_4_Prchsng_travel">GSA Travel Programs</a></li>
-      		 		 		  <li><a href="http://gsa.gov/HDR_4_Prchsng_personal">Personal Property Management</a></li>
-     		 		 		  <li><a href="http://gsa.gov/HDR_4_Prchsng_smartpay">SmartPay (Charge Card Services</a></li>
-     		 		 		  <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_4_Prchsng_gettingstarted">Getting Started</a></li>
-  		 		  		 	</ul>
-  		 		  		 	<ul>
-	 		  		 		  <li><h2><a href="http://gsa.gov/portal/category/21122">REAL ESTATE SERVICES</a></h2></li>
-     		 		 		  <li><a href="http://gsa.gov/HDR_5_RealEstScvs_opps">Finding Business Opportunities</a></li>
-      		 		 		  <li><a href="http://gsa.gov/HDR_5_RealEstScvs_cstmrs">For Federal Customers</a></li>
-      		 		 		  <li><a href="http://gsa.gov/HDR_5_RealEstScvs_workers">For Workers in Federal Buildings</a></li>
-      		 		 		  <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_5_RealEstScvs_property">Property for Disposal/Sale</a></li>
- 		  		 		  	</ul>
- 		  		 		  		  <div class="clear"></div>
- 		  		 		  </div>
- 		  		 </li>
- 		  		 <li class="tab" id="learn_more">
- 		  		 		  <a href="#" class="mainlk">Learn More</a>
- 		  		 		  <div class="submenu">
- 		  		 		  	<ul>
-	 		  		 		  <li><h2><a href="http://gsa.gov/portal/category/21023">HOW WE HELP</a></h2></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_6_Help_govtcustomers">Government Customers</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_6_Help_state">State and Local Governments</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_6_Help_fedemployees">Federal Employees</a></li>	 		  		 		  
-	 		  		 		  <li><a href="http://gsa.gov/HDR_6_Help_businesses">Businesses</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_6_Help_citizens">Citizens &amp; Consumers</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_6_Help_disabilities">Americans with Disabilities</a></li>	 		  		 		  
-	 		  		 		  <li><a href="http://gsa.gov/HDR_6_Help_tribes">Native American Tribes</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_6_Help_emergency">Emergency Response</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_6_Help_support">Customer Support</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_6_Help_presidential">Presidential Transition</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_6_Help_recovery">Recovery Act</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_6_Help_open">Open Government</a></li>
-		 		 		  	  <li><a href="http://gsa.gov/HDR_6_Help_areasinterest">Areas of Interest</a></li>
-	 		  		 		  <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_6_Help_new">New to GSA?</a></li>
- 		  		 		  	</ul>
- 		  		 		  	<ul>
-	 		  		 		  <li><h2><a href="http://gsa.gov/portal/category/20982">ABOUT GSA</a></h2></li>
-	 		  		      	  <li><a href="http://gsa.gov/HDR_7_Aboutgsa_background">Background &amp; History</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/portal/event/getEvents/">Events</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_7_Aboutgsa_training">Training Programs</a></li>
-		 		 		      <li><a href="http://gsa.gov/HDR_7_Aboutgsa_organization">Organization</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_7_Aboutgsa_careers">Careers</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_7_Aboutgsa_reports">Budget, Performance, &amp; Agency Reports</a></li>
-                              <li><a href="http://www.gsa.gov/portal/category/21418">Orders &amp; Directives</a></li> 
-	 		  		 		  <li><a href="http://gsa.gov/HDR_7_Aboutgsa_reference">Reference</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_7_Aboutgsa_catalogs">Catalogs, Publications, &amp; Newsletters</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_7_Aboutgsa_socialmedia">Social Media</a></li>
-	 		  		 		  <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_7_Aboutgsa_staffdirectory">Staff Directory</a></li>
- 		  		 		  	</ul>
- 		  		 		  	<ul>
-	 		  		 		  <li><h2><a href="http://gsa.gov/portal/category/26627">NEWSROOM</a></h2></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_8_News_releases">News Releases</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_8_News_photogalleries">Photo Galleries</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_8_News_videos">Videos</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_8_News_speeches">Speeches</a></li>
-	 		  		 		  <li><a href="http://gsa.gov/HDR_8_News_congress">Congressional Testimony</a></li>
- 		  		 		  	</ul>
-  		 		  		 	<div class="clear"></div>
- 		  		 		  </div>
- 		    </li>
-			<li class="tab" id="blogs">
-				<a href="http://gsablogs.gsa.gov/gsablog" class="mainlk">Blogs</a>
-			</li>
- 		 </ul>
- 		 </div>
+    <section id="main">
+        <div class="row">
+            <div class="col-md-6">
+                <small>Our Mission</small>
+                <p>To provide dolor sit amet, consectetur adipiscing elit. Cras a rhoncus tortor, porta volutpat erat. Vestibulum arcu lacus, lacinia eu accumsan vitae, egestas et arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst.</p>
+            </div>
+            <div class="col-md-6">
+                By leveraging dolor sit amet, consectetur adipiscing elit. Cras a rhoncus tortor, porta volutpat erat. Vestibulum arcu lacus, lacinia eu accumsan vitae, egestas et arcu.
+            </div>
+        </div>
+    </section>
+    <nav class="sticky">
+        <a class="logo"><span class="logo-gsa">GSA</span></a>
+        <a data-section="welcome">Welcome</a>
+        <a data-section="our-priorities">Our Priorities</a>
+        <a data-section="who-we-are">Who We Are</a>
+        <a data-section="gsa-data">GSA Data</a>
+    </nav>
+
+    <!-- SECTION START ::::: WELCOME -->
+    <section id="welcome">
+        <div class="content-wrap col-sm-offset-1 col-sm-10">
+            <h2>Welcome</h2>
+        </div>
+    </section>
+
+    <!-- SECTION START ::::: PRIORITIES -->
+    <section id="our-priorities" class="gray-section">
+        <div class="content-wrap col-sm-offset-1 col-sm-10">
+            <div class="row">
+                <figure class="col-sm-4 icon-block">
+                    <img class="img-responsive" src="images/icon-block-deliveringBetter.jpg" alt="Delivering Better Value &amp; Savings">
+                </figure>
+                <figure class="col-sm-4 icon-block">
+                    <img class="img-responsive" src="images/icon-block-deliveringBetter.jpg" alt="Delivering Better Value &amp; Savings">
+                </figure>
+                <figure class="col-sm-4 icon-block">
+                    <img class="img-responsive" src="images/icon-block-deliveringBetter.jpg" alt="Delivering Better Value &amp; Savings">
+                </figure>
+            </div>
+            <div class="row">
+                <figure class="col-sm-4 icon-block">
+                    <img class="img-responsive" src="images/icon-block-deliveringBetter.jpg" alt="Delivering Better Value &amp; Savings">
+                </figure>
+                <figure class="col-sm-4 icon-block">
+                    <img class="img-responsive" src="images/icon-block-deliveringBetter.jpg" alt="Delivering Better Value &amp; Savings">
+                </figure>
+                <figure class="col-sm-4 icon-block">
+                    <img class="img-responsive" src="images/icon-block-deliveringBetter.jpg" alt="Delivering Better Value &amp; Savings">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section id="who-we-are"><h1>Who We Are</h1></section>
+    <section id="gsa-data"><h1>SA Data</h1></section>
 </div>
 
 
-
-</header>
-<section id="main">
-	<div class="row">
-		<div class="col-md-6">
-			<small>Our Mission</small>
-			<p>To provide dolor sit amet, consectetur adipiscing elit. Cras a rhoncus tortor, porta volutpat erat. Vestibulum arcu lacus, lacinia eu accumsan vitae, egestas et arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst.</p>
-		</div>
-		<div class="col-md-6">
-			By leveraging dolor sit amet, consectetur adipiscing elit. Cras a rhoncus tortor, porta volutpat erat. Vestibulum arcu lacus, lacinia eu accumsan vitae, egestas et arcu.
-		</div>
-	</div>
-</section>
-
-<nav class="sticky">
-	<a class="logo"><span class="logo-gsa">GSA</span></a>
-	<a data-section="welcome">Welcome</a>
-	<a data-section="our-priorities">Our Priorities</a>
-	<a data-section="who-we-are">Who We Are</a>
-	<a data-section="gsa-data">GSA Data</a>
-</nav>
-
-<section id="welcome"><h1>Welcome</h1></section>
-<section id="our-priorities"><h1>Our Priorities</h1></section>
-<section id="who-we-are"><h1>Who We Are</h1></section>
-<section id="gsa-data"><h1>SA Data</h1></section>
-
-</div>
 </body>
 </html>
