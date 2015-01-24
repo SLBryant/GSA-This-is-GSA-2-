@@ -1,0 +1,64 @@
+#navigation {
+  background: $GSAdarkBlue;
+  @include border-radius(0);
+  border: 0;
+  .paddingFix {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  ul {
+    width: 100%;
+    li {
+      width: 20%;
+      text-align: center;
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        border-right: 1px solid #fff;
+          &:hover, &:active {
+            background: none;
+          }
+      }
+      &#logo {
+        //background: $GSAlightBlue;
+        border-right: 0;
+        margin-left: -50px;
+        width: 248px;
+        a {
+          color: $GSAdarkBlue;
+        }
+        span {
+          font-size: 30px;
+          display: block;
+          text-align: right;
+          margin-top: -20px;
+          margin-right: 20px;
+        }
+      }
+      &.active {
+        a {
+          background: #fff;
+          color: $GSAdarkBlue;
+        }
+        &:nth-child(1){
+          a {
+            background: $GSAlightBlue;
+            color: #fff!important;
+            border-right: 0;
+          }
+        }
+        &:nth-child(3){
+          a {
+            background: $gray;
+          }
+        }
+      }
+    }
+  }
+  &.locked {
+    top: 0;
+    width: 1090px;
+    position: fixed;
+    z-index: 9;
+  }
+}

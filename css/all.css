@@ -1,0 +1,674 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-gsif7l");
+  src: url("../fonts/icomoon.eot?#iefix-gsif7l") format("embedded-opentype"), url("../fonts/icomoon.woff?-gsif7l") format("woff"), url("../fonts/icomoon.ttf?-gsif7l") format("truetype"), url("../fonts/icomoon.svg?-gsif7l#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-phone:before {
+  content: "\e600"; }
+
+.icon-mobile:before {
+  content: "\e601"; }
+
+.icon-mail:before {
+  content: "\e602"; }
+
+.icon-paperplane:before {
+  content: "\e603"; }
+
+.icon-paperclip:before {
+  content: "\e604"; }
+
+.icon-reply:before {
+  content: "\e605"; }
+
+.icon-forward:before {
+  content: "\e606"; }
+
+.icon-user:before {
+  content: "\e607"; }
+
+.icon-users:before {
+  content: "\e608"; }
+
+.icon-user-add:before {
+  content: "\e609"; }
+
+.icon-vcard:before {
+  content: "\e60a"; }
+
+.icon-export:before {
+  content: "\e60b"; }
+
+.icon-location:before {
+  content: "\e60c"; }
+
+.icon-map:before {
+  content: "\e60d"; }
+
+.icon-share:before {
+  content: "\e60e"; }
+
+.icon-star:before {
+  content: "\e60f"; }
+
+.icon-chat:before {
+  content: "\e610"; }
+
+.icon-comment:before {
+  content: "\e611"; }
+
+.icon-flag:before {
+  content: "\e612"; }
+
+.icon-cog:before {
+  content: "\e613"; }
+
+.icon-airplane:before {
+  content: "\e614"; }
+
+.icon-calendar:before {
+  content: "\e615"; }
+
+.icon-bolt:before {
+  content: "\e616"; }
+
+.icon-battery:before {
+  content: "\e617"; }
+
+.icon-cone:before {
+  content: "\e618"; }
+
+.icon-earth:before {
+  content: "\e619"; }
+
+.icon-keyboard:before {
+  content: "\e61a"; }
+
+.icon-code:before {
+  content: "\e61b"; }
+
+.icon-rss:before {
+  content: "\e61c"; }
+
+.icon-signal:before {
+  content: "\e61d"; }
+
+.icon-checkmark:before {
+  content: "\e61e"; }
+
+.icon-cross:before {
+  content: "\e61f"; }
+
+.icon-minus:before {
+  content: "\e620"; }
+
+.icon-plus:before {
+  content: "\e621"; }
+
+.icon-cross2:before {
+  content: "\e622"; }
+
+.icon-minus2:before {
+  content: "\e623"; }
+
+.icon-plus2:before {
+  content: "\e624"; }
+
+.icon-info:before {
+  content: "\e625"; }
+
+.icon-info2:before {
+  content: "\e626"; }
+
+.icon-cycle:before {
+  content: "\e627"; }
+
+.icon-cw:before {
+  content: "\e628"; }
+
+.icon-ccw:before {
+  content: "\e629"; }
+
+.icon-retweet:before {
+  content: "\e62a"; }
+
+.icon-layout:before {
+  content: "\e62b"; }
+
+.icon-list:before {
+  content: "\e62c"; }
+
+.icon-docs:before {
+  content: "\e62d"; }
+
+.icon-pictures:before {
+  content: "\e62e"; }
+
+.icon-music:before {
+  content: "\e62f"; }
+
+.icon-trash:before {
+  content: "\e630"; }
+
+.icon-upload:before {
+  content: "\e631"; }
+
+.icon-download:before {
+  content: "\e632"; }
+
+.icon-disk:before {
+  content: "\e633"; }
+
+.icon-play:before {
+  content: "\e634"; }
+
+.icon-pause:before {
+  content: "\e635"; }
+
+.icon-sound:before {
+  content: "\e636"; }
+
+.icon-arrow-left:before {
+  content: "\e637"; }
+
+.icon-arrow-down:before {
+  content: "\e638"; }
+
+.icon-arrow-up:before {
+  content: "\e639"; }
+
+.icon-arrow-right:before {
+  content: "\e63a"; }
+
+.icon-twitter:before {
+  content: "\e63b"; }
+
+.icon-twitter2:before {
+  content: "\e63c"; }
+
+.icon-facebook:before {
+  content: "\e63d"; }
+
+.icon-facebook2:before {
+  content: "\e63e"; }
+
+.icon-facebook3:before {
+  content: "\e63f"; }
+
+.icon-googleplus:before {
+  content: "\e640"; }
+
+.icon-googleplus2:before {
+  content: "\e641"; }
+
+.icon-pinterest:before {
+  content: "\e642"; }
+
+.icon-pinterest2:before {
+  content: "\e643"; }
+
+.icon-tumblr:before {
+  content: "\e644"; }
+
+.icon-linkedin:before {
+  content: "\e645"; }
+
+.icon-linkedin2:before {
+  content: "\e646"; }
+
+.icon-dropbox:before {
+  content: "\e647"; }
+
+.icon-skype:before {
+  content: "\e648"; }
+
+/***  Transitions  ***/
+/***  Radius  ***/
+/***  Box Border  ***/
+/***  Cover BG  ***/
+/***  Flexbox  ***/
+/* --------------------
+Extenders
+--------------------------*/
+/* skip nav */
+#skip-to-content-destination a.skip-content {
+  color: #060;
+  height: 1px;
+  left: -1000px;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  top: -1000px;
+  width: 1px;
+  z-index: 9000; }
+
+#skip-to-content-destination a.skip-content:active, #skip-to-content-destination a.skip-content:focus {
+  background-color: #D9E6DF;
+  height: auto;
+  left: 0;
+  overflow: auto;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  width: 100%;
+  z-index: 9000; }
+
+#header {
+  height: 140px;
+  *height: 136px;
+  width: 990px;
+  margin-left: 0; }
+  #header > a > img {
+    margin-bottom: 13px; }
+  #header li {
+    list-style: none; }
+
+#GSAsearchHeader {
+  float: right !important;
+  text-align: right;
+  margin-top: 15px; }
+
+#GSAsearchHeader label {
+  display: none; }
+
+#searchButton {
+  position: relative;
+  top: 6px;
+  /* ie7 */
+  *top: 3px;
+  /* !ie7 */ }
+
+#searchBox {
+  height: 18px; }
+
+#GSAloginHeader {
+  float: right;
+  margin-top: 7px; }
+
+#GSAloginHeader li {
+  float: left;
+  font-size: .85em;
+  padding: 0 5px; }
+
+/***************** Navigation *****************/
+/* Gray - GSA.gov ONLY */
+#gray {
+  background: url(http://gsa.gov/resources/images/overlay.png) repeat-x;
+  display: none;
+  z-index: 980;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+#topnav {
+  width: 100%;
+  height: 55px;
+  margin: 10px 0 0;
+  *margin: 0;
+  padding: 0;
+  clear: both;
+  background: url(http://gsa.gov/resources/images/header_bg.gif);
+  position: relative;
+  z-index: 990; }
+  #topnav ul {
+    padding-left: 0;
+    margin-bottom: 0; }
+
+#topnav ul, #topnav ul li {
+  float: left; }
+
+#topnav ul li a {
+  display: block;
+  font-family: Geneva,Verdana,sans-serif; }
+
+#topnav .mainlk {
+  cursor: default;
+  height: 55px; }
+
+#topnav a.mainlk {
+  text-indent: -9999px; }
+
+#topnav #lkhome .mainlk {
+  width: 90px; }
+
+#topnav #gsa_offers a.mainlk {
+  width: 187px;
+  background: url(http://gsa.gov/resources/images/gsa_offers.gif); }
+
+#topnav #gsa_offers a.mainlk:hover, #topnav #gsa_offers a.mainlk.over {
+  background: url(http://gsa.gov/resources/images/gsa_offers_hover.gif); }
+
+#topnav #business_gsa .mainlk {
+  width: 255px;
+  background: url(http://gsa.gov/resources/images/business_gsa.gif); }
+
+#topnav #business_gsa a.mainlk:hover, #topnav #business_gsa a.mainlk.over {
+  background: url(http://gsa.gov/resources/images/business_gsa_hover.gif); }
+
+#topnav #learn_more .mainlk {
+  width: 177px;
+  background: url(http://gsa.gov/resources/images/learn_more.gif); }
+
+#topnav #learn_more a.mainlk:hover, #topnav #learn_more a.mainlk.over {
+  background: url(http://gsa.gov/resources/images/learn_more_hover.gif); }
+
+#topnav #blogs .mainlk {
+  width: 177px;
+  background: url(http://gsa.gov/resources/images/blogs.gif); }
+
+#topnav #blogs a.mainlk:hover, #topnav #blogs a.mainlk.over {
+  background: url(http://gsa.gov/resources/images/blogs_hover.gif); }
+
+#topnav #lkstore .mainlk {
+  width: 141px; }
+
+#topnav li .submenu {
+  position: absolute;
+  width: 750px;
+  background: #FFF;
+  display: none;
+  overflow: hidden;
+  border-top: 1px solid #CCC;
+  padding: 15px; }
+
+#topnav #business_gsa .submenu {
+  width: 490px; }
+
+#topnav #learn_more .submenu {
+  width: 512px; }
+
+#topnav .submenu {
+  margin-left: 0; }
+
+#topnav li .submenu a {
+  color: #323E95; }
+
+#topnav li .submenu a:hover {
+  text-decoration: underline; }
+
+#topnav li .submenu ul {
+  padding: 0 10px; }
+
+#topnav #gsa_offers .submenu ul {
+  width: 230px; }
+
+#topnav #business_gsa .submenu ul {
+  width: 225px; }
+
+#topnav #learn_more .submenu ul {
+  width: 150px; }
+
+#topnav li .submenu ul li {
+  width: 100%; }
+
+#topnav li .submenu h2 {
+  margin: 0;
+  padding-top: 5px;
+  width: 100%;
+  background: url(http://gsa.gov/resources/images/double_line.gif) repeat-x 0 0;
+  font-weight: 700;
+  font-size: 1em !important; }
+
+#topnav li .submenu h2 a {
+  line-height: 25px;
+  height: 25px;
+  color: #232a63; }
+
+#topnav li .submenu li a {
+  line-height: 15px;
+  font-size: .85em;
+  margin-bottom: 5px; }
+
+/* ***************************Breadcrumb Styles *********************************/
+#breadcrumb {
+  color: #282E8C;
+  background: #bbc8e8;
+  font-size: .85em;
+  padding: 5px 0 5px 14px;
+  margin: 0 0 15px; }
+
+#breadcrumb a:link, #breadcrumb a:visited, #breadcrumb a:hover {
+  text-decoration: underline; }
+
+#navigation {
+  background: #315369;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0; }
+  #navigation .paddingFix {
+    padding-left: 0;
+    padding-right: 0; }
+  #navigation ul {
+    width: 100%; }
+    #navigation ul li {
+      width: 20%;
+      text-align: center; }
+      #navigation ul li a {
+        color: #fff;
+        text-transform: uppercase;
+        border-right: 1px solid #fff; }
+        #navigation ul li a:hover, #navigation ul li a:active {
+          background: none; }
+      #navigation ul li#logo {
+        border-right: 0;
+        margin-left: -50px;
+        width: 248px; }
+        #navigation ul li#logo a {
+          color: #315369; }
+        #navigation ul li#logo span {
+          font-size: 30px;
+          display: block;
+          text-align: right;
+          margin-top: -20px;
+          margin-right: 20px; }
+      #navigation ul li.active a {
+        background: #fff;
+        color: #315369; }
+      #navigation ul li.active:nth-child(1) a {
+        background: #47a2e3;
+        color: white !important;
+        border-right: 0; }
+      #navigation ul li.active:nth-child(3) a {
+        background: #edf0f5; }
+  #navigation.locked {
+    top: 0;
+    width: 1090px;
+    position: fixed;
+    z-index: 9; }
+
+.section-block {
+  padding: 40px 0; }
+
+.banner-header {
+  min-height: 350px; }
+
+#intro {
+  background: url(http://placehold.it/1100x425) no-repeat 0 0;
+  min-height: 425px;
+  position: relative; }
+  #intro .paddingFix {
+    padding-left: 0;
+    padding-right: 0; }
+  #intro #hero {
+    background: rgba(50, 62, 149, 0.3);
+    color: #fff;
+    padding: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
+    #intro #hero hgroup {
+      padding: 35px 0;
+      text-transform: uppercase; }
+      #intro #hero hgroup h1 {
+        background: #47a2e3;
+        padding: 20px 50px 0;
+        font-size: 30px; }
+        #intro #hero hgroup h1 span {
+          font-size: 100px;
+          display: block;
+          text-align: right;
+          margin-top: -45px; }
+      #intro #hero hgroup h2 {
+        padding: 0 50px; }
+  #intro footer {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    color: #fff; }
+
+#welcome #welcome-video {
+  background: #edf0f5; }
+
+#priorities {
+  background: #edf0f5; }
+
+.foursquare article {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  margin: 10px 0; }
+  .foursquare article > div {
+    padding-left: 20px;
+    -webkit-align-self: flex-end;
+    -moz-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+    .foursquare article > div h3 {
+      padding: 0;
+      margin: 0; }
+
+#data {
+  background: #edf0f5; }
+
+/* Carousel */
+.carousel-inner {
+  width: auto; }
+
+.carousel-control {
+  width: 50px;
+  background: #999;
+  background: rgba(0, 0, 0, 0.2);
+  background-image: none !important;
+  opacity: 1; }
+  .carousel-control span {
+    color: #323e95;
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -25px; }
+
+.carousel-indicators {
+  display: none;
+  top: 365px;
+  bottom: auto;
+  z-index: 8; }
+  .carousel-indicators li {
+    background: #315369;
+    border: 0; }
+    .carousel-indicators li.active {
+      border: 1px solid #47a2e3;
+      background: #fff; }
+
+.modal-content {
+  width: 100%;
+  min-height: 200px; }
+
+.modal-lg {
+  width: 990px; }
+
+.close {
+  opacity: 1;
+  font-size: 25px;
+  margin-right: 15px; }
+
+body {
+  background-color: #ced5f2;
+  font: 13px/16px Helvetica,Verdana,Arial,Garuda,sans-serif; }
+
+.main-container {
+  box-shadow: 1px 1px 10px #999;
+  background: #fff;
+  width: 1090px;
+  padding: 0 50px; }
+
+#superheader {
+  width: 100%;
+  font: 13px/16px Helvetica,Verdana,Arial,Garuda,sans-serif; }
+
+h3, h4, h5, h6 {
+  padding: 0;
+  margin: 10px 0 25px; }
+
+h4 {
+  margin-top: 15px;
+  text-transform: uppercase; }
+
+h5 {
+  text-transform: uppercase;
+  color: #3366ff; }
+
+a {
+  color: #3a45bf; }
+
+.paddingless-row {
+  margin: 0 -50px; }
+  .paddingless-row .paddingFix {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px; }
+
+.larger-p {
+  font-size: 20px;
+  line-height: 1.2; }
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.stacked-links {
+  margin-top: 20px; }
+  .stacked-links li {
+    margin: 10px 0; }
+
+.icon-block {
+  margin-top: 15px;
+  cursor: pointer; }

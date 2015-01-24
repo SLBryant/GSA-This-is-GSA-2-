@@ -1,0 +1,24 @@
+/* Carousel */
+.carousel-inner {
+  width: auto; }
+
+.carousel-control {
+  width: 50px;
+  background: #999;
+  background: rgba(0, 0, 0, 0.3);
+  background-image: none !important; }
+
+.carousel-control span {
+  color: #000099; }
+
+.modal-content {
+  width: 100%;
+  min-height: 200px; }
+
+.modal-lg {
+  width: 990px; }
+
+.close {
+  opacity: 1;
+  font-size: 25px;
+  margin-right: 15px; }

@@ -1,327 +1,517 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
 <head>
-    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="js/assets.js"></script>
-    <script type="text/javascript" src="js/gsa-header.js"></script>
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="http://gsa.gov/resources/js/jquery.hoverIntent.minified.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <!--[if lte IE 9]>
-    <script src="bootstrap/js/carousel.js"></script>
-    <![endif]-->
-    <script type="text/javascript" src="js/app.js"></script>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/app.css"/>
-    <link rel="stylesheet" href="css/gsa-header.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>This Unfortunately is GSA</title>
+    <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-<!-- START container -->
-<div class="main-container container">
-    <!-- GSA Standard Nav -->
-    <div id="gray" style="display: none;"></div>
-    <header id="banner" class="navbar has-main-shadow" role="banner">
-        <div class="gsa-navbar-inner span11">
-            <div id="superheader" class="clearfix">
-                <a href="http://gsa.gov/HDR_0_home" style=" float: left;"><img width="286" height="50" border="0" alt="GSA Logo" style="margin-top: 22px; margin-bottom: 22px;" src="http://gsa.gov/resources/images/GSAlogo.gif"></a>
-                <div id="GSAloginHeader">
-                    <ul>
-                        <li><a title="home" href="http://www.gsa.gov/HDR_0_home">Home</a></li>
-                        <li>|</li>
-                        <li><a title="newsroom" href="http://www.gsa.gov/newsroom">Newsroom</a></li>
-                        <li>|</li>
-                        <li><a title="Regions" href="http://www.gsa.gov/HDR_0_regions">Regions</a></li>
-                        <li>|</li>
-                        <li><a title="staff directory" href="http://www.gsa.gov/portal/staffDirectory/searchStaffDirectory">Staff Directory</a>
-                        </li> <li>|</li>
-                        <li><a title="Careers" href="http://www.gsa.gov/HDR_0_careers">Careers</a></li>
-                        <li>|</li>
-                        <li><a title="Forms" href="http://www.gsa.gov/portal/forms/type/TOP">Forms</a></li>
-                        <li>|</li>
-                        <li><a title="e-Tools" href="http://www.gsa.gov/HDR_0_etools">e-Tools</a></li>
-                        <li>|</li>
-                        <li><a title="QuickLinks" href="http://www.gsa.gov/HDR_0_quicklinks">QuickLinks</a></li>
-                    </ul>
+    <!-- START container -->
+    <div class="main-container container">
+        <!-- GSA Standard Nav -->
+        <div id="skip-to-content-destination"><a href="#skipContent" class="skip-content">Skip to main content</a></div>
+        <div id="gray" style="display: none;"></div>
+        <header id="header">
+            <a href="http://gsa.gov/HDR_0_home" style=" float: left;"><img width="286" height="50" border="0" alt="GSA Logo" style="margin-top: 22px;" src="http://gsa.gov/resources/images/GSAlogo.gif"></a>
+            <div id="GSAloginHeader">
+                <ul>
+                    <li><a title="home" href="http://gsa.govhttp://gsa.gov/portal/category/100000">Home</a></li>
+                    <li>|</li>
+                    <li><a id="mobileSite" title="mobile" href="#">Mobile Site</a></li>
+                    <li>|</li>
+                    <li><a title="newsroom" href="http://gsa.gov/portal/category/26627">Newsroom</a></li>
+                    <li>|</li>
+                    <li><a title="Regions" href="http://gsa.gov/portal/category/22227">Regions</a></li>
+                    <li>|</li>
+                    <li>
+                        <a id="link0" href="http://gsa.gov/portal/staffDirectory/searchStaffDirectory.action" title="Staff Directory">Staff Directory</a>
+                    </li> <li>|</li>
+                    <li><a title="Careers" href="http://gsa.gov/portal/content/105311">Careers</a></li>
+                    <li>|</li>
+                    <li><a href="http://gsa.gov/portal/forms/type/TOP" title="Forms">Forms</a></li>
+                    <li>|</li>
+                    <li><a title="e-Tools" href="http://gsa.gov/portal/content/104555">e-Tools</a></li>
+                    <li>|</li>
+                    <li><a title="QuickLinks" href="http://gsa.gov/portal/content/116605">QuickLinks</a></li>
+                </ul>
+            </div>
+            <div class="clear"><img src="http://gsa.gov/resources/images/transparent.gif" height="1" alt=""></div>
+            <div id="GSAsearchHeader">
+                <form accept-charset="UTF-8" action="http://search.gsa.gov/search" id="search_form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+                    <input id="affiliate" name="affiliate" type="hidden" value="gsa.gov">
+                    <label for="query">Enter Search Term(s):</label>
+                    <input autocomplete="off" class="usagov-search-autocomplete ui-autocomplete-input" id="query" name="query" type="text" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                    <input name="commit" type="submit" value="Search">
+                </form>
+            </div>
+            <!-- top navigation -->
+            <div id="topnav">
+                <ul>
+                    <li class="tab" id="gsa_offers">
+                        <a href="#" class="mainlk">What GSA Offers</a>
+                        <div class="submenu" style="display: none;">
+                            <ul>
+                                <li><h2><a href="http://gsa.gov/portal/category/20987">BUILDINGS &amp; REAL ESTATE</a></h2></li>
+                                <li><a href="http://gsa.gov/portal/content/104549">Design &amp; Construction</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104502">Environmental Programs</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104501">GSA Properties</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104441">Historic Preservation</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104476">Facilities Management</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104674">Realty Services</a></li>
+                                <li class="NOSEPARATOR"><a href="http://gsa.gov/portal/content/105218">WorkPlace Innovation</a></li>
+                            </ul>
+                            <ul>
+                                <li><h2><a href="http://gsa.gov/portal/category/21027">PRODUCTS &amp; SERVICES</a></h2></li>
+                                <li><a href="http://gsa.gov/portal/content/105218">Acquisition Solutions</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105189">Energy &amp; Environmental</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105187">Facilities, Supplies, Equipment, &amp; Tools</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105190">Office Supplies, Equipment, &amp; Furniture</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105188">Professional &amp; Technical Solutions</a></li>
+                                <li><a href="http://gsa.gov/portal/category/21045">Property for Disposal/Sale</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104644">Security, Fire, &amp; Law Enforcement</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104688">Shared Services</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105195">Technology &amp; Telecommunications</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105196">Transportation, Relocation &amp; Vehicles</a></li>
+                                <li class="NOSEPARATOR"><a href="http://gsa.gov/portal/content/105307">Travel</a></li>
+                            </ul>
+                            <ul>
+                                <li><h2><a href="http://gsa.gov/portal/category/21219">POLICY &amp; REGULATIONS</a></h2></li>
+                                <li><a href="http://gsa.gov/portal/content/104579">Acquisition Policy</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104520">Aviation Management Policy</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104634">Information, Integrity, &amp; Access</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104547">Mail Management Policy</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104604">Personal Property Management Policy</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105099">Policy Performance</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104525">Real Property Management Policy</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104647">Regulations: FMR, FTR, &amp; FAR</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104631">Transportation Policy</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105185">Travel and Relocation Policy</a></li>
+                                <li class="NOSEPARATOR"><a href="http://gsa.gov/portal/content/104602">Vehicle Management Policy</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li class="tab" id="business_gsa">
+                        <a href="#" class="mainlk">Doing Business with GSA</a>
+                        <div class="submenu" style="display: none;">
+                            <ul>
+                                <li><h2><a href="http://gsa.gov/portal/category/20998">PURCHASING PROGRAMS</a></h2></li>
+                                <li><a href="http://gsa.gov/portal/category/100611">GSA Schedules</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104729">Technology Programs</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105201">Assisted Acquisition</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105203">Requisition Programs</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105273">GSA Fleet &amp; Automotive</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104618">GSA Global Supply</a></li>
+                                <li><a href="http://gsa.gov/portal/category/27084">GSA Travel Programs</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105197">Personal Property Management</a></li>
+                                <li><a href="http://smartpay.gsa.gov/">SmartPay (Charge Card) Services</a></li>
+                                <li class="NOSEPARATOR"><a href="http://gsa.gov/portal/content/105347">Getting Started</a></li>
+                            </ul>
+                            <ul>
+                                <li><h2><a href="http://gsa.gov/portal/category/21122">REAL ESTATE SERVICES</a></h2></li>
+                                <li><a href="http://gsa.gov/portal/category/22013">Finding Business Opportunities</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105204">For Federal Customers</a></li>
+                                <li><a href="http://gsa.gov/portal/content/186671">For Workers in Federal Buildings</a></li>
+                                <li class="NOSEPARATOR"><a href="http://gsa.gov/portal/content/104493">Property for Disposal/Sale</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li class="tab" id="learn_more">
+                        <a href="#" class="mainlk" style="text-indent: -9999px">Learn More</a>
+                        <div class="submenu" style="display: none;">
+                            <ul>
+                                <li><h2><a href="http://gsa.gov/portal/category/21023">HOW WE HELP</a></h2></li>
+                                <li><a href="http://gsa.gov/portal/content/105198">Government Customers</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105300">State and Local Governments</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105191">Federal Employees</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105199">Businesses</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105207">Citizens &amp; Consumers</a></li>
+                                <li><a href="/http://gsa.gov/portal/content/193773" onclick="_gaq.push(['_trackEvent','outbound','Click','portal/content/193773']); ">Americans with Disabilities</a></li>
+                                <li><a href="http://gsa.gov/portal/category/100391">Native American Tribes</a></li>
+                                <li><a href="http://gsa.govhttp://gsa.gov/portal/content/105086">Emergency Response</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105200">Customer Support</a></li>
+                                <li><a href="http://gsa.gov/portal/category/26427">Presidential Transition</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105234">Recovery Act</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105340">Open Government</a></li>
+                                <li><a href="http://gsa.gov/portal/content/288141">Mobile Government</a></li>
+                                <li><a href="http://gsa.gov/portal/category/26425">Areas of Interest</a></li>
+                                <li class="NOSEPARATOR"><a href="http://gsa.gov/portal/content/104772">New to GSA?</a></li>
+                            </ul>
+                            <ul>
+                                <li><h2><a href="http://gsa.gov/portal/category/20982">ABOUT GSA</a></h2></li>
+                                <li><a href="http://gsa.gov/portal/content/104774">Background &amp; History</a></li>
+                                <li><a href="http://gsa.gov/portal/event/getEvents/">Events</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104738">Training Programs</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104438">Organization</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105311">Careers</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104553">Budget, Performance, &amp; Agency Reports</a></li>
+                                <li><a href="/directives">Orders &amp; Directives</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104578">Reference</a></li>
+                                <li><a href="http://gsa.gov/portal/content/104924">Catalogs, Publications, &amp; Newsletters</a></li>
+                                <li><a href="http://gsa.gov/portal/category/100139">Social Media</a></li>
+                                <li class="NOSEPARATOR"><a href="http://gsa.gov/portal/staffDirectory/searchStaffDirectory">Staff Directory</a></li>
+                            </ul>
+                            <ul>
+                                <li><h2><a href="http://gsa.gov/portal/category/26627">NEWSROOM</a></h2></li>
+                                <li><a href="http://gsa.gov/portal/indexpage/category/26662/hostUri/portal">News Releases</a></li>
+                                <li><a href="http://gsa.gov/portal/indexpage/teaser/album/category/101271/hostUri/portal">Photo Galleries</a></li>
+                                <li><a href="http://gsa.gov/portal/category/26684">Videos</a></li>
+                                <li><a href="http://gsa.gov/portal/content/105096">Speeches</a></li>
+                                <li><a href="http://gsa.gov/portal/indexpage/category/26640/hostUri/portal">Congressional Testimony</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li class="tab" id="blogs">
+                        <a href="http://gsablogs.gsa.gov/gsablog/" class="mainlk" style="text-indent: -9999px">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Start BREADCRUMBS -->
+        <div id="breadcrumb">
+            <a href="http://gsa.gov/portal/category/100000">Home</a> &gt;
+            <a href="#">About GSA</a> &gt;
+            <a href="#">This is GSA</a>
+        </div>
+        <!-- END HEADER BLOCK -->
+
+        <!-- intro -->
+        <section id="intro" class="paddingless-row">
+            <div class="paddingFix">
+                <header id="hero" class="jumbotron col-sm-5">
+                    <hgroup>
+                        <h2>Integrity <br> Transparency <br> Collaboration </h2>
+                        <h1>This is <span class="huge-letters">GSA</span></h1>
+                    </hgroup>
+                </header>
+                <div class="clearfix"></div>
+                <footer>
+                    <p>Lorem ipsum dolar sit anit el ipsum dolar sit.</p>
+                </footer>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav id="navigation" class="navbar paddingless-row">
+            <div class="paddingFix">
+                <ul class="navbar-nav nav">
+                    <li id="logo"><a href="#mission">This is <span>GSA</span></a></li>
+                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="#priorities">Our Priorities</a></li>
+                    <li><a href="#about">Who We Are</a></li>
+                    <li><a href="#data">GSA Data</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- SECTION -->
+        <section id="mission" class="section-block paddingless-row">
+            <div class="paddingFix">
+                <h5>Our Mission</h5>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p class="larger-p">Thank you Mr President for chairing this open debate and I would like to thank ASG Toyberg-Frandzen for his briefing this morning.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>A further 25 NHS staff from across the UK are deploying to Sierra Leone to join Britains fight against Ebola, International Development Secretary Justine Greening announced today. The Bank of England and HM Treasury are today announcing an extension to the Funding for Lending Scheme (FLS).</p>
+                    </div>
                 </div>
-                <div class="clear"><img src="http://gsa.gov/resources/images/transparent.gif" height="1" alt=""></div>
-
-                <!-- top navigation -->
-                <div id="topnav">
-                    <ul>
-                        <li class="tab" id="gsa_offers">
-                            <a href="#" class="mainlk">What GSA Offers</a>
-                            <div class="submenu">
-                                <ul>
-                                    <li><h2><a href="http://gsa.gov/portal/category/20987">BUILDINGS &amp; REAL ESTATE</a></h2></li>
-                                    <li><a href="http://gsa.gov/HDR_1_Bldgs_design">Design &amp; Construction</a></li>
-                                    <li><a href="http://gsa.gov/HDR_1_Bldgs_environmental">Environmental Programs</a></li>
-                                    <li><a href="http://gsa.gov/HDR_1_Bldgs_properties">GSA Properties</a></li>
-                                    <li><a href="http://gsa.gov/HDR_1_Bldgs_historic">Historic Preservation</a></li>
-                                    <li><a href="http://gsa.gov/HDR_1_Bldgs_facilities">Facilities Management</a></li>
-                                    <li><a href="http://gsa.gov/HDR_1_Bldgs_realty">Realty Services</a></li>
-                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_1_Bldgs_workplace">WorkPlace Innovation</a></li>
-                                </ul>
-                                <ul>
-                                    <li><h2><a href="http://gsa.gov/portal/category/21027">PRODUCTS &amp; SERVICES</a></h2></li>
-                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_acquisition">Acquisition Solutions</a></li>
-                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_energy">Energy &amp; Environmental</a></li>
-                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_supplies">Facilities, Supplies, Equipment, &amp; Tools</a></li>
-                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_office">Office Supplies, Equipment, &amp; Furniture</a></li>
-                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_professional">Professional &amp; Technical Solutions</a></li>
-                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_property">Property for Disposal/Sale</a></li>
-                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_security">Security, Fire, &amp; Law Enforcement</a></li>
-                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_sharedsvcs">Shared Services</a></li>
-                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_technology">Technology &amp; Telecommunications</a></li>
-                                    <li><a href="http://gsa.gov/HDR_2_Prdcts_transportation">Transportation, Relocation &amp; Vehicles</a></li>
-                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_2_Prdcts_travel">Travel</a></li>
-                                </ul>
-                                <ul>
-                                    <li><h2><a href="http://gsa.gov/portal/category/21219">POLICY &amp; REGULATIONS</a></h2></li>
-                                    <li><a href="http://gsa.gov/HDR_3_Plcy_regulations">Regulations: FMR, FTR, &amp; FAR</a></li>
-                                    <li><a href="http://gsa.gov/HDR_3_Plcy_acquisition">Acquisition Policy</a></li>
-                                    <li><a href="http://gsa.gov/HDR_3_Plcy_aircraft">Aircraft Management</a></li>
-                                    <li><a href="http://gsa.gov/HDR_3_Plcy_innovation">Collaboration &amp; Reports</a></li>
-                                    <li><a href="http://gsa.gov/HDR_3_Plcy_mail">Mail Management</a></li>
-                                    <li><a href="http://gsa.gov/HDR_3_Plcy_personal">Personal Property Management</a></li>
-                                    <li><a href="http://gsa.gov/HDR_3_Plcy_real">Real Property Management</a></li>
-                                    <li><a href="http://gsa.gov/HDR_3_Plcy_technology">Technology Strategy</a></li>
-                                    <li><a href="http://gsa.gov/HDR_3_Plcy_travel">Travel, Transportation, &amp; Relocation</a></li>
-                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_3_Plcy_vehicle">Vehicle Management</a></li>
-                                </ul>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-                        <li class="tab" id="business_gsa">
-                            <a href="#" class="mainlk">Doing Business with GSA</a>
-                            <div class="submenu" style="display: none;">
-                                <ul>
-                                    <li><h2><a href="http://gsa.gov/portal/category/20998">PURCHASING PROGRAMS</a></h2></li>
-                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_schedules">GSA Schedules</a></li>
-                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_tech">Technology Programs</a></li>
-                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_acquisition">Assisted Acquisition</a></li>
-                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_requisition">Requisition Programs</a></li>
-                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_fleet">GSA Fleet &amp; Automotive</a></li>
-                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_global">GSA Global Supply</a></li>
-                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_travel">GSA Travel Programs</a></li>
-                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_personal">Personal Property Management</a></li>
-                                    <li><a href="http://gsa.gov/HDR_4_Prchsng_smartpay">SmartPay (Charge Card Services</a></li>
-                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_4_Prchsng_gettingstarted">Getting Started</a></li>
-                                </ul>
-                                <ul>
-                                    <li><h2><a href="http://gsa.gov/portal/category/21122">REAL ESTATE SERVICES</a></h2></li>
-                                    <li><a href="http://gsa.gov/HDR_5_RealEstScvs_opps">Finding Business Opportunities</a></li>
-                                    <li><a href="http://gsa.gov/HDR_5_RealEstScvs_cstmrs">For Federal Customers</a></li>
-                                    <li><a href="http://gsa.gov/HDR_5_RealEstScvs_workers">For Workers in Federal Buildings</a></li>
-                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_5_RealEstScvs_property">Property for Disposal/Sale</a></li>
-                                </ul>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-                        <li class="tab" id="learn_more">
-                            <a href="#" class="mainlk">Learn More</a>
-                            <div class="submenu">
-                                <ul>
-                                    <li><h2><a href="http://gsa.gov/portal/category/21023">HOW WE HELP</a></h2></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_govtcustomers">Government Customers</a></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_state">State and Local Governments</a></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_fedemployees">Federal Employees</a></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_businesses">Businesses</a></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_citizens">Citizens &amp; Consumers</a></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_disabilities">Americans with Disabilities</a></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_tribes">Native American Tribes</a></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_emergency">Emergency Response</a></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_support">Customer Support</a></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_presidential">Presidential Transition</a></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_recovery">Recovery Act</a></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_open">Open Government</a></li>
-                                    <li><a href="http://gsa.gov/HDR_6_Help_areasinterest">Areas of Interest</a></li>
-                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_6_Help_new">New to GSA?</a></li>
-                                </ul>
-                                <ul>
-                                    <li><h2><a href="http://gsa.gov/portal/category/20982">ABOUT GSA</a></h2></li>
-                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_background">Background &amp; History</a></li>
-                                    <li><a href="http://gsa.gov/portal/event/getEvents/">Events</a></li>
-                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_training">Training Programs</a></li>
-                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_organization">Organization</a></li>
-                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_careers">Careers</a></li>
-                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_reports">Budget, Performance, &amp; Agency Reports</a></li>
-                                    <li><a href="http://www.gsa.gov/portal/category/21418">Orders &amp; Directives</a></li>
-                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_reference">Reference</a></li>
-                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_catalogs">Catalogs, Publications, &amp; Newsletters</a></li>
-                                    <li><a href="http://gsa.gov/HDR_7_Aboutgsa_socialmedia">Social Media</a></li>
-                                    <li class="NOSEPARATOR"><a href="http://gsa.gov/HDR_7_Aboutgsa_staffdirectory">Staff Directory</a></li>
-                                </ul>
-                                <ul>
-                                    <li><h2><a href="http://gsa.gov/portal/category/26627">NEWSROOM</a></h2></li>
-                                    <li><a href="http://gsa.gov/HDR_8_News_releases">News Releases</a></li>
-                                    <li><a href="http://gsa.gov/HDR_8_News_photogalleries">Photo Galleries</a></li>
-                                    <li><a href="http://gsa.gov/HDR_8_News_videos">Videos</a></li>
-                                    <li><a href="http://gsa.gov/HDR_8_News_speeches">Speeches</a></li>
-                                    <li><a href="http://gsa.gov/HDR_8_News_congress">Congressional Testimony</a></li>
-                                </ul>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-                        <li class="tab" id="blogs">
-                            <a href="http://gsablogs.gsa.gov/gsablog" class="mainlk">Blogs</a>
-                        </li>
-                    </ul>
+            </div>
+        </section>
+        <section id="welcome" class="paddingless-row">
+            <div id="welcome-video" >
+                <div class="paddingFix">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="videoWrapper">
+                            <iframe width="854" height="510" src="//www.youtube.com/embed/sUSS6OULGpc" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- END GSA Standard NAV -->
-
-    <section id="main">
-        <div class="row">
-            <div class="col-md-6">
-                <small>Our Mission</small>
-                <p>To provide dolor sit amet, consectetur adipiscing elit. Cras a rhoncus tortor, porta volutpat erat. Vestibulum arcu lacus, lacinia eu accumsan vitae, egestas et arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst.</p>
+            <div class="paddingFix section-block">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h3>Welcome</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum lorem eget lacus efficitur, at bibendum diam elementum. Pellentesque tincidunt lacinia rutrum. Sed accumsan elit malesuada augue placerat, nec tincidunt arcu suscipit. Suspendisse pharetra metus eros, a finibus ligula vestibulum ut. Sed tincidunt congue lorem commodo facilisis. Fusce sed vestibulum turpis. Aliquam ut rhoncus dui.</p>
+                        <p>Donec ultricies nunc vitae tincidunt vestibulum. Curabitur scelerisque, orci nec ullamcorper fermentum, est ipsum fringilla arcu, et molestie ipsum nulla dictum ipsum. Sed non turpis finibus, rutrum nibh a, semper leo. Duis tristique libero augue, a maximus nunc imperdiet vitae. Phasellus magna ante, faucibus in iaculis id, rhoncus quis quam. Pellentesque congue nulla eget erat faucibus rutrum. Praesent sed ultricies eros, ut vehicula nisi. Praesent mattis, eros id mollis condimentum, mi nisi iaculis metus, eu dapibus nunc tortor in ligula. In ut rutrum lorem, quis facilisis ante. Donec sit amet bibendum orci. Donec suscipit pharetra rutrum.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Additional Information</h4>
+                        <ul class="list-unstyled stacked-links">
+                            <li><a href="#">Biography</a></li>
+                            <li><a href="#">Biography</a></li>
+                            <li><a href="#">Biography</a></li>
+                            <li><a href="#">Biography</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                By leveraging dolor sit amet, consectetur adipiscing elit. Cras a rhoncus tortor, porta volutpat erat. Vestibulum arcu lacus, lacinia eu accumsan vitae, egestas et arcu.
-            </div>
-        </div>
-    </section>
-    <nav class="sticky">
-        <a class="logo"><span class="logo-gsa">GSA</span></a>
-        <a data-section="welcome">Welcome</a>
-        <a data-section="our-priorities">Our Priorities</a>
-        <a data-section="who-we-are">Who We Are</a>
-        <a data-section="gsa-data">GSA Data</a>
-    </nav>
-
-    <!-- SECTION START ::::: WELCOME -->
-    <section id="welcome" class="section-block">
-        <div class="content-wrap col-sm-offset-1 col-sm-10">
-            <h2>Welcome</h2>
-        </div>
-    </section>
-
-    <!-- SECTION START ::::: PRIORITIES -->
-    <section id="our-priorities" class="section-block gray-section">
-        <div id="our-priorities-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <!-- item -->
-                <div class="item active">
-                    <div class="content-wrap col-sm-offset-1 col-sm-10">
+        </section>
+        <section id="priorities" class="section-block paddingless-row">
+            <div id="priorities-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <!-- item -->
+                    <div class="item paddingFix active">
                         <div class="row">
-                            <figure data-target="#our-priorities-carousel" data-slide-to="1" class="col-sm-4 icon-block">
+                            <figure data-target="#priorities-carousel" data-slide-to="1" class="col-sm-4 icon-block">
                                 <img class="img-responsive" src="images/icon-block-deliveringBetter.jpg" alt="Delivering Better Value &amp; Savings">
                             </figure>
-                            <figure data-target="#our-priorities-carousel" data-slide-to="2" class="col-sm-4 icon-block">
+                            <figure data-target="#priorities-carousel" data-slide-to="2" class="col-sm-4 icon-block">
                                 <img class="img-responsive" src="images/icon-block-deliveringBetter.jpg" alt="Delivering Better Value &amp; Savings">
                             </figure>
-                            <figure data-target="#our-priorities-carousel" data-slide-to="3" class="col-sm-4 icon-block">
+                            <figure data-target="#priorities-carousel" data-slide-to="3" class="col-sm-4 icon-block">
                                 <img class="img-responsive" src="images/icon-block-expandingOpportunities.jpg" alt="Expanding Opportunities for Small Businesses">
                             </figure>
                         </div>
                         <div class="row">
-                            <figure data-target="#our-priorities-carousel" data-slide-to="4" class="col-sm-4 icon-block">
+                            <figure data-target="#priorities-carousel" data-slide-to="4" class="col-sm-4 icon-block">
                                 <img class="img-responsive" src="images/icon-block-deliveringBetter.jpg" alt="Delivering Better Value &amp; Savings">
                             </figure>
-                            <figure data-target="#our-priorities-carousel" data-slide-to="5" class="col-sm-4 icon-block">
+                            <figure data-target="#priorities-carousel" data-slide-to="5" class="col-sm-4 icon-block">
                                 <img class="img-responsive" src="images/icon-block-deliveringBetter.jpg" alt="Delivering Better Value &amp; Savings">
                             </figure>
-                            <figure data-target="#our-priorities-carousel" data-slide-to="6" class="col-sm-4 icon-block">
+                            <figure data-target="#priorities-carousel" data-slide-to="6" class="col-sm-4 icon-block">
                                 <img class="img-responsive" src="images/icon-block-deliveringBetter.jpg" alt="Delivering Better Value &amp; Savings">
                             </figure>
                         </div>
-                        <article class="slider-text-block">
-                            <h2>Our Priorities</h2>
-                            <p>By incorporating these six priorities into everything we do here at GSA, we will confidently meet our responsibilities to the American people and guarantee that all of our activities, from our biggest purchases to our most routine leases, are carried out with integrity and at the highest level of performance.</p>
-                            <footer>
-                                <a href="#">Download raw 508 compliant articles.</a>
-                            </footer>
-                        </article>
+                        <div class="section-block">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3>Our Priorities</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum lorem eget lacus efficitur, at bibendum diam elementum. Pellentesque tincidunt lacinia rutrum. Sed accumsan elit malesuada augue placerat, nec tincidunt arcu suscipit. Suspendisse pharetra metus eros, a finibus ligula vestibulum ut. Sed tincidunt congue lorem commodo facilisis. Fusce sed vestibulum turpis. Aliquam ut rhoncus dui.</p>
+                                    <p><a href="#" target="_blank">Download raw 508 compliant articles</a></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- item -->
+                    <div class="item">
+                        <div class="banner-header" style="background-image: url(http://placehold.it/1100x335);">
+                            <div class="paddingFix">
+                                <figure data-slide-to="1" class="col-sm-4 icon-block">
+                                    <img class="img-responsive" src="images/icon-block-deliveringBetter.jpg" alt="Delivering Better Value &amp; Savings">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="paddingFix section-block">
+                            <h3>Welcome</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum lorem eget lacus efficitur, at bibendum diam elementum. Pellentesque tincidunt lacinia rutrum. Sed accumsan elit malesuada augue placerat, nec tincidunt arcu suscipit. Suspendisse pharetra metus eros, a finibus ligula vestibulum ut. Sed tincidunt congue lorem commodo facilisis. Fusce sed vestibulum turpis. Aliquam ut rhoncus dui.</p>
+                            <p>Donec ultricies nunc vitae tincidunt vestibulum. Curabitur scelerisque, orci nec ullamcorper fermentum, est ipsum fringilla arcu, et molestie ipsum nulla dictum ipsum. Sed non turpis finibus, rutrum nibh a, semper leo. Duis tristique libero augue, a maximus nunc imperdiet vitae. Phasellus magna ante, faucibus in iaculis id, rhoncus quis quam. Pellentesque congue nulla eget erat faucibus rutrum. Praesent sed ultricies eros, ut vehicula nisi. Praesent mattis, eros id mollis condimentum, mi nisi iaculis metus, eu dapibus nunc tortor in ligula. In ut rutrum lorem, quis facilisis ante. Donec sit amet bibendum orci. Donec suscipit pharetra rutrum.</p>
+
+                            <section class="foursquare">
+                                <div class="row">
+                                    <article class="col-sm-6">
+                                        <figure class="col-sm-2">
+                                            <img src="http://placehold.it/70x70" alt="Printwise Icon">
+                                        </figure>
+                                        <div class="col-sm-10">
+                                            <h3><a href="#" data-toggle="modal" data-target="#modalView" data-source="printWise">PrintWise</a></h3>
+                                            <p>A more efficient government starts in your printer tray.</p>
+                                        </div>
+                                    </article>
+                                    <article class="col-sm-6">
+                                        <figure class="col-sm-2">
+                                            <img src="http://placehold.it/70x70" alt="Printwise Icon">
+                                        </figure>
+                                        <div class="col-sm-10">
+                                            <h3><a href="#" data-toggle="modal" data-target="#modalView" data-source="greenProvingGround">Green Proving Ground</a></h3>
+                                            <p>A more efficient government starts in your printer tray.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="row">
+                                    <article class="col-sm-6">
+                                        <figure class="col-sm-2">
+                                            <img src="http://placehold.it/70x70" alt="Printwise Icon">
+                                        </figure>
+                                        <div class="col-sm-10">
+                                            <h3><a href="#" data-toggle="modal" data-target="#modalView" data-source="dataCenters">Data Centers</a></h3>
+                                            <p>A more efficient government starts in your printer tray.</p>
+                                        </div>
+                                    </article>
+                                    <article class="col-sm-6">
+                                        <figure class="col-sm-2">
+                                            <img src="http://placehold.it/70x70" alt="Printwise Icon">
+                                        </figure>
+                                        <div class="col-sm-10">
+                                            <h3><a href="#" data-toggle="modal" data-target="#modalView" data-source="energyEfficiency">Energy Efficiency</a></h3>
+                                            <p>A more efficient government starts in your printer tray. A more efficient government starts in your printer tray.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div><!-- close inner carousel -->
+                <!-- Pagination -->
+                <ol class="carousel-indicators">
+                    <li data-target="#priorities-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#priorities-carousel" data-slide-to="1"></li>
+                </ol>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#priorities-carousel" role="button" data-slide="prev" style="display:none;">
+                    <span class="icon-arrow-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#priorities-carousel" role="button" data-slide="next">
+                    <span class="icon-arrow-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="paddingless-row">
+            <div class="banner-header" style="background-image: url(http://placehold.it/1100x335);">
+                <div class="paddingFix">
+                   <!-- Who we are ---- in a flexbox -->
                 </div>
-                <!-- item -->
-                <div class="item">
-                    <img src="http://placehold.it/1000x300" alt="Test">
-                    <div class="content-wrap col-sm-offset-1 col-sm-10">
-                        <article class="slider-text-block">
-                            <h2>Going green saves green.</h2>
-                            <p>By incorporating these six priorities into everything we do here at GSA, we will confidently meet our responsibilities to the American people and guarantee that all of our activities, from our biggest purchases to our most routine leases, are carried out with integrity and at the highest level of performance.</p>
-                            <a href="#">Download raw 508 compliant articles.</a>
-                        </article>
-                        <div class="row">
-                            <article class="col-sm-6">
-                                <figure class="pull-left">
-                                    <img src="http://placehold.it/70x70" alt="Printwise Icon">
-                                </figure>
-                                <div>
-                                    <h3><a href="#" data-toggle="modal" data-target="#modalView" data-source="printWise">PrintWise</a></h3>
-                                    <p>A more efficient government starts in your printer tray.</p>
-                                </div>
-                            </article>
-                            <article class="col-sm-6">
-                                <figure class="pull-left">
-                                    <img src="http://placehold.it/70x70" alt="Printwise Icon">
-                                </figure>
-                                <div>
-                                    <h3><a href="#" data-toggle="modal" data-target="#modalView" data-source="greenProvingGround">Green Proving Ground</a></h3>
-                                    <p>A more efficient government starts in your printer tray.</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="row">
-                            <article class="col-sm-6">
-                                <figure class="pull-left">
-                                    <img src="http://placehold.it/70x70" alt="Printwise Icon">
-                                </figure>
-                                <div>
-                                    <h3><a href="#" data-toggle="modal" data-target="#modalView" data-source="energyEfficiency">Energy Efficiency</a></h3>
-                                    <p>A more efficient government starts in your printer tray.</p>
-                                </div>
-                            </article>
-                            <article class="col-sm-6">
-                                <figure class="pull-left">
-                                    <img src="http://placehold.it/70x70" alt="Printwise Icon">
-                                </figure>
-                                <div>
-                                    <h3><a href="#" data-toggle="modal" data-target="#modalView" data-source="dataCenters">Data Centers</a></h3>
-                                    <p>A more efficient government starts in your printer tray.</p>
-                                </div>
-                            </article>
-                        </div>
+            </div>
+            <div class="section-block paddingFix">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h3>Lorem ipsum dolar sit</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum lorem eget lacus efficitur, at bibendum diam elementum. Pellentesque tincidunt lacinia rutrum. Sed accumsan elit malesuada augue placerat, nec tincidunt arcu suscipit. Suspendisse pharetra metus eros, a finibus ligula vestibulum ut. Sed tincidunt congue lorem commodo facilisis. Fusce sed vestibulum turpis. Aliquam ut rhoncus dui.</p>
+                        <p>Donec ultricies nunc vitae tincidunt vestibulum. Curabitur scelerisque, orci nec ullamcorper fermentum, est ipsum fringilla arcu, et molestie ipsum nulla dictum ipsum. Sed non turpis finibus, rutrum nibh a, semper leo. Duis tristique libero augue, a maximus nunc imperdiet vitae. Phasellus magna ante, faucibus in iaculis id, rhoncus quis quam. Pellentesque congue nulla eget erat faucibus rutrum. Praesent sed ultricies eros, ut vehicula nisi. Praesent mattis, eros id mollis condimentum, mi nisi iaculis metus, eu dapibus nunc tortor in ligula. In ut rutrum lorem, quis facilisis ante. Donec sit amet bibendum orci. Donec suscipit pharetra rutrum.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Additional Information</h4>
+                        <ul class="list-unstyled stacked-links">
+                            <li><a href="#">Biography</a></li>
+                            <li><a href="#">Biography</a></li>
+                            <li><a href="#">Biography</a></li>
+                            <li><a href="#">Biography</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Controls -->
-            <a class="left carousel-control" href="#our-priorities-carousel" role="button" data-slide="prev" style="display:none;">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#our-priorities-carousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        <!-- -->
+        <section id="data" class="paddingless-row">
+            <div id="data-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <!-- item -->
+                    <div class="item active">
+                        <div class="banner-header" style="background-image: url(http://placehold.it/1100x335);">
+                            <div class="paddingFix">
+                                <!-- text -->
+                            </div>
+                        </div>
+                        <div class="paddingFix section-block">
+                            <h3>GSA Data</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum lorem eget lacus efficitur, at bibendum diam elementum. Pellentesque tincidunt lacinia rutrum. Sed accumsan elit malesuada augue placerat, nec tincidunt arcu suscipit. Suspendisse pharetra metus eros, a finibus ligula vestibulum ut. Sed tincidunt congue lorem commodo facilisis. Fusce sed vestibulum turpis. Aliquam ut rhoncus dui.</p>
+                            <p>Donec ultricies nunc vitae tincidunt vestibulum. Curabitur scelerisque, orci nec ullamcorper fermentum, est ipsum fringilla arcu, et molestie ipsum nulla dictum ipsum. Sed non turpis finibus, rutrum nibh a, semper leo. Duis tristique libero augue, a maximus nunc imperdiet vitae. Phasellus magna ante, faucibus in iaculis id, rhoncus quis quam. Pellentesque congue nulla eget erat faucibus rutrum. Praesent sed ultricies eros, ut vehicula nisi. Praesent mattis, eros id mollis condimentum, mi nisi iaculis metus, eu dapibus nunc tortor in ligula. In ut rutrum lorem, quis facilisis ante. Donec sit amet bibendum orci. Donec suscipit pharetra rutrum.</p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="item">
+                        <div class="banner-header" style="background-image: url(http://placehold.it/1100x335);">
+                            <div class="paddingFix">
+                                <!-- text -->
+                            </div>
+                        </div>
+                        <div class="paddingFix section-block">
+                            <h3>GSA Data</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum lorem eget lacus efficitur, at bibendum diam elementum. Pellentesque tincidunt lacinia rutrum. Sed accumsan elit malesuada augue placerat, nec tincidunt arcu suscipit. Suspendisse pharetra metus eros, a finibus ligula vestibulum ut. Sed tincidunt congue lorem commodo facilisis. Fusce sed vestibulum turpis. Aliquam ut rhoncus dui.</p>
+                            <p>Donec ultricies nunc vitae tincidunt vestibulum. Curabitur scelerisque, orci nec ullamcorper fermentum, est ipsum fringilla arcu, et molestie ipsum nulla dictum ipsum. Sed non turpis finibus, rutrum nibh a, semper leo. Duis tristique libero augue, a maximus nunc imperdiet vitae. Phasellus magna ante, faucibus in iaculis id, rhoncus quis quam. Pellentesque congue nulla eget erat faucibus rutrum. Praesent sed ultricies eros, ut vehicula nisi. Praesent mattis, eros id mollis condimentum, mi nisi iaculis metus, eu dapibus nunc tortor in ligula. In ut rutrum lorem, quis facilisis ante. Donec sit amet bibendum orci. Donec suscipit pharetra rutrum.</p>
 
-    </section>
-    <section id="who-we-are" class="section-block">
+                            <section class="foursquare">
+                                <div class="row">
+                                    <article class="col-sm-6">
+                                        <figure class="col-sm-2">
+                                            <img src="http://placehold.it/70x70" alt="Printwise Icon">
+                                        </figure>
+                                        <div class="col-sm-10">
+                                            <h3><a href="#" data-toggle="modal" data-target="#modalView" data-source="printWise">PrintWise</a></h3>
+                                            <p>A more efficient government starts in your printer tray.</p>
+                                        </div>
+                                    </article>
+                                    <article class="col-sm-6">
+                                        <figure class="col-sm-2">
+                                            <img src="http://placehold.it/70x70" alt="Printwise Icon">
+                                        </figure>
+                                        <div class="col-sm-10">
+                                            <h3><a href="#" data-toggle="modal" data-target="#modalView" data-source="greenProvingGround">Green Proving Ground</a></h3>
+                                            <p>A more efficient government starts in your printer tray.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="row">
+                                    <article class="col-sm-6">
+                                        <figure class="col-sm-2">
+                                            <img src="http://placehold.it/70x70" alt="Printwise Icon">
+                                        </figure>
+                                        <div class="col-sm-10">
+                                            <h3><a href="#" data-toggle="modal" data-target="#modalView" data-source="dataCenters">Data Centers</a></h3>
+                                            <p>A more efficient government starts in your printer tray.</p>
+                                        </div>
+                                    </article>
+                                    <article class="col-sm-6">
+                                        <figure class="col-sm-2">
+                                            <img src="http://placehold.it/70x70" alt="Printwise Icon">
+                                        </figure>
+                                        <div class="col-sm-10">
+                                            <h3><a href="#" data-toggle="modal" data-target="#modalView" data-source="energyEfficiency">Energy Efficiency</a></h3>
+                                            <p>A more efficient government starts in your printer tray. A more efficient government starts in your printer tray.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div><!-- close inner carousel -->
+                <!-- Pagination -->
+                <ol class="carousel-indicators">
+                    <li data-target="#data-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#data-carousel" data-slide-to="1"></li>
+                </ol>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#data-carousel" role="button" data-slide="prev" style="display:none;">
+                    <span class="icon-arrow-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#data-carousel" role="button" data-slide="next">
+                    <span class="icon-arrow-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
 
-    </section>
-    <section id="gsa-data" class="section-block">
-        <h1>GSA Data</h1>
-    </section>
-</div>
+    </div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="modalView" tabindex="-1" role="dialog" aria-labelledby="ModalMessage" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <div id="content-catcher">
-                <img id="modal-loading" src="images/loading.gif" alt="loading graphic">
+    <!-- Modal Template-->
+    <div class="modal fade" id="modalView" tabindex="-1" role="dialog" aria-labelledby="ModalMessage" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div id="content-catcher">
+                    <!-- MODALS WILL GO HERE -->
+                    <img id="modal-loading" src="images/loading.gif" alt="loading graphic">
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://gsa.gov/resources/js/jquery.hoverIntent.minified.js"></script>
+    <script type="text/javascript" src="js/gsa-header.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
 </body>
 </html>
