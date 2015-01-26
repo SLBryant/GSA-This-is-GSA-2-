@@ -501,14 +501,15 @@ Extenders
   min-height: 350px; }
 
 #intro {
-  background: url(http://placehold.it/1100x425) no-repeat 0 0;
+  background: url(../images/intro-bg.jpg) no-repeat 0 0;
   min-height: 425px;
   position: relative; }
   #intro .paddingFix {
     padding-left: 0;
     padding-right: 0; }
   #intro #hero {
-    background: rgba(50, 62, 149, 0.3);
+    background: url(../images/hero-bg.png);
+    background: rgba(50, 62, 149, 0.4);
     color: #fff;
     padding: 0;
     -webkit-border-radius: 0;
@@ -611,7 +612,7 @@ Extenders
 
 body {
   background-color: #ced5f2;
-  font: 13px/16px Helvetica,Verdana,Arial,Garuda,sans-serif; }
+  font-family: Helvetica, Verdana, Arial, Garuda, sans-serif; }
 
 .main-container {
   box-shadow: 1px 1px 10px #999;
@@ -671,4 +672,17 @@ a {
 
 .icon-block {
   margin-top: 15px;
-  cursor: pointer; }
+  cursor: pointer;
+  overflow: hidden; }
+  .icon-block:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); }
+  .icon-block img {
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }

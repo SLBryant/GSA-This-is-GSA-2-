@@ -10,7 +10,7 @@
 
 body{
   background-color:rgb(206,213,242);
-  font: 13px/16px Helvetica,Verdana,Arial,Garuda,sans-serif;
+  font-family: $standardGSAFamily;
 }
 .main-container{
   box-shadow:1px 1px 10px #999;
@@ -77,10 +77,19 @@ a {
 .icon-block {
   margin-top: 15px;
   cursor: pointer;
-    img {
-      //width: 100%;
-    }
+  overflow: hidden;
+  &:hover img {
+    @include scale(1.1);
+  }
+  img {
+    @include transition(all 0.5s);
+  }
 }
+
+
+
+
+
 
 
 
