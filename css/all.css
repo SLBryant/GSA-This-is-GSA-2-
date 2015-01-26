@@ -472,7 +472,9 @@ Extenders
         margin-left: -50px;
         width: 248px; }
         #navigation ul li#logo a {
-          color: #315369; }
+          background: #47a2e3;
+          color: white !important;
+          border-right: 0; }
         #navigation ul li#logo span {
           font-size: 30px;
           display: block;
@@ -486,8 +488,6 @@ Extenders
         background: #47a2e3;
         color: white !important;
         border-right: 0; }
-      #navigation ul li.active:nth-child(3) a {
-        background: #edf0f5; }
   #navigation.locked {
     top: 0;
     width: 1090px;
@@ -613,6 +613,9 @@ Extenders
 body {
   background-color: #ced5f2;
   font-family: Helvetica, Verdana, Arial, Garuda, sans-serif; }
+
+.nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active {
+  background: none; }
 
 .main-container {
   box-shadow: 1px 1px 10px #999;

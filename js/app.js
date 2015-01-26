@@ -2,6 +2,30 @@ if(!GSA){
     var GSA = {}
 }
 
+GSA.images = new function(){
+
+    this.cacheImages = function() {
+        $.fn.preload = function() {
+            this.each(function(){
+                $('<img/>')[0].src = this;
+            });
+        }
+
+        $(['images/intro-bg.jpg',
+            'images/intro-bg-2.jpg',
+            'images/intro-bg-3.jpg'
+        ]).preload();
+    }
+
+    this.introBackgroundRotator = function() {
+        var images = ['images/intro-bg.jpg', 'images/intro-bg-2.jpg', 'images/intro-bg-3.jpg'];
+        $('#intro').css({'background-image': 'url('+images[Math.floor(Math.random() * images.length)] + ')'});
+
+    }
+
+};
+
+
 
 GSA.navigation = new function() {
     var lastId,
@@ -128,6 +152,12 @@ GSA.modals_carousels = new function() {
 /////////////////////////*/
 
 $(function(){
+    GSA.images.cacheImages();
+    GSA.images.introBackgroundRotator();
+    $('#logo a').click(function() {
+        GSA.images.introBackgroundRotator();
+    })
+
     GSA.navigation.stickyNav();
     GSA.navigation.scrollToSection();
     GSA.navigation.highlightCurrentNavItem();

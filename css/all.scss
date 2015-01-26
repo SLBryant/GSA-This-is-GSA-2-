@@ -12,6 +12,10 @@ body{
   background-color:rgb(206,213,242);
   font-family: $standardGSAFamily;
 }
+.nav>li>a:hover, .nav>li>a:focus, .nav>li>a:active {
+  background: none;
+}
+
 .main-container{
   box-shadow:1px 1px 10px #999;
   background:#fff;

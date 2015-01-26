@@ -20,12 +20,13 @@
           }
       }
       &#logo {
-        //background: $GSAlightBlue;
         border-right: 0;
         margin-left: -50px;
         width: 248px;
         a {
-          color: $GSAdarkBlue;
+          background: $GSAlightBlue;
+          color: #fff!important;
+          border-right: 0;
         }
         span {
           font-size: 30px;
@@ -45,11 +46,6 @@
             background: $GSAlightBlue;
             color: #fff!important;
             border-right: 0;
-          }
-        }
-        &:nth-child(3){
-          a {
-            background: $gray;
           }
         }
       }
