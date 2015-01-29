@@ -108,7 +108,7 @@ GSA.modals_carousels = new function() {
     };
 
     this.carousels = function(carouselID) {
-        $('.carousel').carousel({
+        $(carouselID).carousel({
             interval : false
         });
 
@@ -120,10 +120,10 @@ GSA.modals_carousels = new function() {
             // check if it's the first slide
             if(firstSlide.hasClass('active')) {
                 $(this).find('.left').css('display','none');
-                $('.carousel-indicators').css('display','none');
+                $(carouselID).find('.carousel-indicators').css('display','none');
             } else {
                 $(this).find('.left').css('display','block');
-                $('.carousel-indicators').css('display','block');
+                $(carouselID).find('.carousel-indicators').css('display','block');
             }
             // check if it's the last slide
             if(lastSlide.hasClass('active')) {

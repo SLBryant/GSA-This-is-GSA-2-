@@ -3,7 +3,16 @@
 }
 
 .banner-header {
-  min-height: 350px;
+  min-height: 320px;
+  @include flexbox;
+  @include flexAlignItems(center);
+    figure {
+      margin: 0;
+    }
+    h2 {
+      color: #fff;
+      font-weight: bold;
+    }
 }
 
 #intro {
@@ -61,10 +70,7 @@
     article {
       @include flexbox;
       @include flexAlignItems(center);
-      border-bottom: 1px solid #eaeaea;
       margin: 10px 0;
-      figure {
-      }
       > div {
         padding-left: 20px;
         @include alignSelf(flex-end);

@@ -22,19 +22,18 @@
 
 .carousel-indicators {
   display: none;
-  top: 365px;
+  top: 335px;
   bottom: auto;
   z-index: 8;
   li {
     background: $GSAdarkBlue;
     border: 0;
       &.active {
-        border: 1px solid $GSAlightBlue;
+        border: 2px solid $GSAlightBlue;
         background: #fff;
       }
   }
 }
-
 .modal-content {
   width: 100%;
   min-height: 200px;
