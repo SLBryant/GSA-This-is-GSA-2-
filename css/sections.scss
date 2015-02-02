@@ -8,6 +8,13 @@
   @include flexAlignItems(center);
     figure {
       margin: 0;
+      cursor: auto;
+        &:hover img {
+          @include scale(1);
+        }
+        img {
+          @include transition(all 0.5s);
+        }
     }
     h2 {
       color: #fff;
