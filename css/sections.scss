@@ -12,6 +12,8 @@
     h2 {
       color: #fff;
       font-weight: bold;
+      padding: 150px 0;
+      margin: 0;
     }
 }
 
@@ -71,8 +73,14 @@
       @include flexbox;
       @include flexAlignItems(center);
       margin: 10px 0;
+      figure {
+        float: left;
+        max-width: 80px;
+        padding: 0;
+      }
       > div {
         padding-left: 20px;
+        float: right;
         @include alignSelf(flex-end);
         h3 {
           padding: 0;
@@ -83,5 +91,12 @@
 }
 
 #data {
-  background: $gray;  
+  background: $gray;
+    .foursquare {
+      article {
+        > div {
+          float: none;
+        }
+      }
+    }
 }
