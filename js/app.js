@@ -96,7 +96,8 @@ GSA.modals_carousels = new function() {
         modalTemplate.on('shown.bs.modal', function (event) {
             var button = $(event.relatedTarget);
             var CID = button.attr('data-source');
-            $('#content-catcher').load('http://gsa.gov/portal/content/' + CID + ' #content', function () {
+            var location = window.location.protocol + "//" + window.location.host + "/"
+            $('#content-catcher').load(location + 'portal/content/' + CID + ' #content', function () {
                 $('#modal-loading').fadeOut(300);
             });
         });
