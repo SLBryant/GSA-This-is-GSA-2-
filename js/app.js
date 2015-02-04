@@ -93,17 +93,43 @@ GSA.modals_carousels = new function() {
     var modalTemplate = $('#modalView');
 
     this.modals = function () {
+        $('.modal-content').css('max-height', $(window).height() - 200);
+
         modalTemplate.on('shown.bs.modal', function (event) {
             var button = $(event.relatedTarget);
             var CID = button.attr('data-source');
-            var location = window.location.protocol + "//" + window.location.host + "/"
+            var img = button.parentsUntil('article').siblings('figure').find('img').attr('src');
+            var title = button.text();
+            var intro = button.parentsUntil('article').find('p').html();
+            var location = window.location.protocol + "//" + window.location.host + "/";
+
+            if(img != 'undefined') {
+                $('#header-catcher').html('<article class="col-sm-12">' +
+                '<figure class="col-sm-3">' +
+                '<img src="' + img + '" alt="' + title + '">' +
+                '</figure>' +
+                '<div class="col-sm-9">' +
+                '<h2>' + title + '</h2>' +
+                '<h4>' + intro + '</h4>' +
+                '</div>' +
+                '</article>');
+            } else {
+                $('#header-catcher').html('<article class="col-sm-12">' +
+                '<div>' +
+                '<h2>' + title + '</h2>' +
+                '<h4>' + intro + '</h4>' +
+                '</div>' +
+                '</article>');
+            };
             $('#content-catcher').load(location + 'portal/content/' + CID + ' #content', function () {
                 $('#modal-loading').fadeOut(300);
             });
+
         });
 
         modalTemplate.on('hidden.bs.modal', function (event) {
             $('#content-catcher').empty();
+            $('#header-catcher').empty();
             $('<img>').attr('id', 'modal-loading').attr('src', 'images/loading.gif').appendTo('#content-catcher');
         });
     };

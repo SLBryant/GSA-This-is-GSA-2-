@@ -94,6 +94,31 @@ a {
   }
 }
 
+// Modals
+.modal-content {
+  padding: 15px 25px;
+  overflow-y: auto;
+  min-height: 500px;
+}
+#header-catcher {
+  margin-bottom: 15px;
+  h2 {
+    text-transform: uppercase;
+  }
+  h4 {
+    color: #999;
+    text-transform: none;
+  }
+}
+
+#modal-loading {
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  left: 50%;
+  margin-left: -30px;
+}
+
 
 
 

@@ -74,7 +74,7 @@
   background: $gray;
 }
 
-.foursquare {
+.foursquare, #header-catcher {
     article {
       @include flexbox;
       @include flexAlignItems(center);
