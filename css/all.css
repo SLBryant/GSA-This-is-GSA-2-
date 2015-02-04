@@ -729,6 +729,13 @@ a {
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
 
+.modal-lg .close {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  right: 10px;
+  font-size: 35px; }
+
 .modal-content {
   padding: 15px 25px;
   overflow-y: auto;
@@ -748,3 +755,6 @@ a {
   margin-top: -40px;
   left: 50%;
   margin-left: -30px; }
+
+#content-catcher h1 {
+  display: none; }

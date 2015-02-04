@@ -93,7 +93,7 @@ GSA.modals_carousels = new function() {
     var modalTemplate = $('#modalView');
 
     this.modals = function () {
-        $('.modal-content').css('max-height', $(window).height() - 200);
+        $('.modal-content').css('max-height', $(window).height() - 100);
 
         modalTemplate.on('shown.bs.modal', function (event) {
             var button = $(event.relatedTarget);
@@ -102,8 +102,7 @@ GSA.modals_carousels = new function() {
             var title = button.text();
             var intro = button.parentsUntil('article').find('p').html();
             var location = window.location.protocol + "//" + window.location.host + "/";
-
-            if(img != 'undefined') {
+            if(img != undefined) {
                 $('#header-catcher').html('<article class="col-sm-12">' +
                 '<figure class="col-sm-3">' +
                 '<img src="' + img + '" alt="' + title + '">' +
