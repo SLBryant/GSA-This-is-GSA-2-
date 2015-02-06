@@ -3,7 +3,7 @@
 }
 
 .banner-header {
-  height: 200px;
+  height: 320px;
   @include flexbox;
   @include flexAlignItems(center);
     figure {
@@ -104,12 +104,14 @@
 
 #data {
   background: $gray;
-  padding-bottom: 200px;
     .foursquare {
       article {
         > div {
           float: none;
         }
       }
+    }
+    .item:first-child {
+      padding-bottom: 100px;
     }
 }

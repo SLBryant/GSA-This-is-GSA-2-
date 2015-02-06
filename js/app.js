@@ -145,7 +145,7 @@ GSA.modals_carousels = new function() {
             // check if it's the first slide
             if(firstSlide.hasClass('active')) {
                 $(this).find('.left').css('display','none');
-                $(this).find('.icon-navigation').css('display','none');
+                $(this).find('.icon-navigation').slideUp(400);  
             } else {
                 $(this).find('.left').css('display','block');
                 $(this).find('.icon-navigation').slideDown(400);

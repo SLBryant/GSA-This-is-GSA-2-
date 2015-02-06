@@ -498,7 +498,7 @@ Extenders
   padding: 40px 0; }
 
 .banner-header {
-  height: 200px;
+  height: 320px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -604,10 +604,11 @@ Extenders
       font-size: 22px; }
 
 #data {
-  background: #edf0f5;
-  padding-bottom: 200px; }
+  background: #edf0f5; }
   #data .foursquare article > div {
     float: none; }
+  #data .item:first-child {
+    padding-bottom: 100px; }
 
 /* Carousel */
 .carousel-inner {
