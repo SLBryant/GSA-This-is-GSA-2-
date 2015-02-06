@@ -530,7 +530,9 @@ Extenders
     margin: 0; }
 
 #intro {
-  background: url(../images/intro-bg.jpg) no-repeat 0 0;
+  background-image: url(../images/intro-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
   position: relative; }
   #intro .paddingFix {
     padding-left: 0;
@@ -551,13 +553,19 @@ Extenders
         background: #47a2e3;
         padding: 20px 50px 0;
         font-size: 30px; }
-        #intro #hero hgroup h1 span {
+        #intro #hero hgroup h1 #huge-GSA {
           font-size: 100px;
           display: block;
-          text-align: right;
-          margin-top: -45px; }
+          float: left;
+          margin-top: -15px; }
+        #intro #hero hgroup h1 #thisIs {
+          display: block;
+          float: left;
+          font-size: 36px; }
+          #intro #hero hgroup h1 #thisIs #is {
+            padding-left: 48px; }
       #intro #hero hgroup h2 {
-        padding: 0 50px; }
+        padding: 0 50px 7px; }
   #intro footer {
     position: absolute;
     bottom: 0;

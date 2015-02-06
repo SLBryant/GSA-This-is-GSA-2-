@@ -24,7 +24,9 @@
 }
 
 #intro {
-  background: url(../images/intro-bg.jpg) no-repeat 0 0;
+  background-image: url(../images/intro-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
   position: relative;
   .paddingFix {
     padding-left: 0;
@@ -44,15 +46,24 @@
         background: $GSAlightBlue;
         padding: 20px 50px 0;
         font-size: 30px;
-        span {
+        #huge-GSA {
           font-size: 100px;
           display: block;
-          text-align: right;
-          margin-top: -45px;
+          float: left;
+          margin-top: -15px;
         }
+        #thisIs {
+          display: block;
+          float: left;
+          font-size: 36px;
+            #is {
+              padding-left: 48px;
+            }
+        }
+
       }
       h2 {
-        padding: 0 50px;
+        padding: 0 50px 7px;
       }
     }
   }
