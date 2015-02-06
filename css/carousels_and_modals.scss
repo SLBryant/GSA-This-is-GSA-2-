@@ -20,20 +20,6 @@
     }
 }
 
-.carousel-indicators {
-  display: none;
-  top: 335px;
-  bottom: auto;
-  z-index: 8;
-  li {
-    background: $GSAdarkBlue;
-    border: 0;
-      &.active {
-        border: 2px solid $GSAlightBlue;
-        background: #fff;
-      }
-  }
-}
 .modal-content {
   width: 100%;
   min-height: 200px;
@@ -47,4 +33,43 @@
   opacity: 1;
   font-size: 25px;
   margin-right: 15px;
+}
+
+/* Icon Navigation */
+.icon-navigation {
+  background: #ccc;
+  padding: 35px 0;
+  display: none;
+  figure {
+    width: 14.25%;
+    padding: 0 15px;
+    overflow: hidden;
+    float: left;
+    display: block;
+    margin: 0;
+    opacity: 0.3;
+    &:hover {
+      opacity: 1;
+    }
+    img {
+      max-width: 100%;
+      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+      filter: gray;
+      -webkit-filter: grayscale(100%);
+      &:hover {
+        filter: none;
+        -webkit-filter: grayscale(0%);
+      }
+    }
+    &.active-icon {
+      opacity: 1;
+      img {
+        filter: none;
+        -webkit-filter: grayscale(0%);
+      }
+    }
+  }
+}
+#pad-left {
+  margin-left: 150px;
 }
