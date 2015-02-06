@@ -25,9 +25,8 @@
 
 #intro {
   background: url(../images/intro-bg.jpg) no-repeat 0 0;
-  min-height: 425px;
   position: relative;
-  .paddingFix {
+  .paddingFix {     
     padding-left: 0;
     padding-right: 0;
   }
@@ -37,6 +36,7 @@
     color: #fff;
     padding: 0;
     @include border-radius(0);
+    margin-bottom: 0;
     hgroup {
       padding: 35px 0;
       text-transform: uppercase;
