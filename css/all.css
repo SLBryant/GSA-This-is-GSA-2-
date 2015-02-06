@@ -565,7 +565,7 @@ Extenders
     color: #fff; }
 
 #welcome #welcome-video {
-  background: #edf0f5; }
+  padding-bottom: 50px; }
 
 #priorities {
   background: #edf0f5; }
@@ -698,7 +698,10 @@ a {
   padding-bottom: 56.25%;
   /* 16:9 */
   padding-top: 25px;
-  height: 0; }
+  height: 0;
+  -webkit-box-shadow: -1px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -1px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 0px 20px 0px rgba(0, 0, 0, 0.5); }
 
 .videoWrapper iframe {
   position: absolute;
