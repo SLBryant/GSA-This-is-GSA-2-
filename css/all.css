@@ -564,8 +564,12 @@ Extenders
     right: 50px;
     color: #fff; }
 
-#welcome #welcome-video {
-  padding-bottom: 50px; }
+#welcome {
+  padding: 50px 0; }
+  #welcome #welcome-video {
+    margin-top: 25px; }
+  #welcome h4 {
+    margin-top: 0; }
 
 #priorities {
   background: #edf0f5; }
