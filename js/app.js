@@ -145,10 +145,8 @@ GSA.modals_carousels = new function() {
             // check if it's the first slide
             if(firstSlide.hasClass('active')) {
                 $(this).find('.left').css('display','none');
-                $(carouselID).find('.carousel-indicators').css('display','none');
             } else {
                 $(this).find('.left').css('display','block');
-                $(carouselID).find('.carousel-indicators').css('display','block');
             }
             // check if it's the last slide
             if(lastSlide.hasClass('active')) {
@@ -158,7 +156,17 @@ GSA.modals_carousels = new function() {
             }
         });
 
-    }
+    };
+
+    this.slideFunction = function(carouselID) {
+        $(carouselID).on('slide.bs.carousel', function (event) {
+            var button = $(event.relatedTarget);
+            var slideNum = button.index();
+            $('#icon-navigation figure').removeClass('active-icon');
+            $('#icon-navigation figure').eq(slideNum).addClass('active-icon');
+        });
+
+    };
 
     this.slideItemHeight = function(carouselID) {
         setTimeout(function() {
@@ -174,6 +182,14 @@ GSA.modals_carousels = new function() {
         var tabButton = $('#navigation li').eq(buttonEQ).find('a');
         tabButton.click(function() {
             $(carouselID).carousel(0);
+        })
+    }
+
+    this.iconNavigation = function() {
+        var icons = $('#icon-navigation figure');
+        icons.click(function() {
+            icons.removeClass('active-icon');
+            $(this).addClass('active-icon');
         })
     }
 };
@@ -199,8 +215,10 @@ $(function(){
     GSA.modals_carousels.slideItemHeight('#priorities-carousel');
     GSA.modals_carousels.carousels('#data-carousel');
     GSA.modals_carousels.slideItemHeight('#data-carousel');
+    GSA.modals_carousels.slideFunction('#priorities-carousel');
 
-    GSA.modals_carousels.goToSlide('#priorities-carousel', 2)
-    GSA.modals_carousels.goToSlide('#data-carousel', 4)
+    GSA.modals_carousels.goToSlide('#priorities-carousel', 2);
+    GSA.modals_carousels.goToSlide('#data-carousel', 4);
+    GSA.modals_carousels.iconNavigation();
 
 });
