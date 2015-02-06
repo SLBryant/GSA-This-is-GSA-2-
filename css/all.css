@@ -758,3 +758,5 @@ a {
 
 #content-catcher h1 {
   display: none; }
+#content-catcher img {
+  max-width: 100%; }

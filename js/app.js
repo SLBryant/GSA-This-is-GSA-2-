@@ -116,7 +116,6 @@ GSA.modals_carousels = new function() {
                 $('#header-catcher').html('<article class="col-sm-12">' +
                 '<div>' +
                 '<h2>' + title + '</h2>' +
-                '<h4>' + intro + '</h4>' +
                 '</div>' +
                 '</article>');
             };
