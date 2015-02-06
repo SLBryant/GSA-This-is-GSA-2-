@@ -169,6 +169,13 @@ GSA.modals_carousels = new function() {
             $(carouselID).find('.item').height(maxHeight);
         },1)
     }
+
+    this.goToSlide = function(carouselID,buttonEQ) {
+        var tabButton = $('#navigation li').eq(buttonEQ).find('a');
+        tabButton.click(function() {
+            $(carouselID).carousel(0);
+        })
+    }
 };
 
 
@@ -192,5 +199,8 @@ $(function(){
     GSA.modals_carousels.slideItemHeight('#priorities-carousel');
     GSA.modals_carousels.carousels('#data-carousel');
     GSA.modals_carousels.slideItemHeight('#data-carousel');
+
+    GSA.modals_carousels.goToSlide('#priorities-carousel', 2)
+    GSA.modals_carousels.goToSlide('#data-carousel', 4)
 
 });
