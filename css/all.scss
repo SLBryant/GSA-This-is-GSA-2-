@@ -48,6 +48,8 @@ a {
 
 .paddingless-row {
   margin: 0 -50px;
+  zoom: 1;
+  position: relative;
     .paddingFix {
       margin-left: 50px;
       margin-right: 50px;

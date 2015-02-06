@@ -132,6 +132,14 @@ GSA.modals_carousels = new function() {
         });
     };
 
+    this.modalPrint = function() {
+        $('.print').click(function(){
+                $( ".modal-content" ).print();
+
+                return( false );
+        });
+    };
+
     this.carousels = function(carouselID) {
         $(carouselID).carousel({
             interval : false
@@ -224,5 +232,8 @@ $(function(){
     GSA.modals_carousels.goToSlide('#data-carousel', 4);
     GSA.modals_carousels.iconNavigation('#data-carousel');
     GSA.modals_carousels.iconNavigation('#priorities-carousel');
+
+    GSA.modals_carousels.modalPrint();
+
 
 });

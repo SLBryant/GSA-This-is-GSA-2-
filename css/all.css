@@ -718,7 +718,9 @@ a {
   color: #3a45bf; }
 
 .paddingless-row {
-  margin: 0 -50px; }
+  margin: 0 -50px;
+  zoom: 1;
+  position: relative; }
   .paddingless-row .paddingFix {
     margin-left: 50px;
     margin-right: 50px;
