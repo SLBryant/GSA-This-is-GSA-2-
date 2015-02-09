@@ -450,6 +450,54 @@ Extenders
 #breadcrumb a:link, #breadcrumb a:visited, #breadcrumb a:hover {
   text-decoration: underline; }
 
+/****************************Footer Styles *********************************/
+#footer {
+  background: url(http://gsa.gov/resources/images/doubleline_hdr.gif) repeat-x 0 0;
+  padding: 11px;
+  margin-top: 9px;
+  clear: both;
+  text-align: center; }
+
+#footer a {
+  color: #666;
+  font-size: .8em; }
+
+#footer a:hover {
+  text-decoration: underline; }
+
+#footer ul#footer_navigation li {
+  background: none;
+  display: inline;
+  border-right: 1px #666 solid;
+  padding: 0 10px 2px; }
+
+#footer ul#footer_navigation li.last {
+  border-right: none; }
+
+#footer img {
+  margin-right: 7px; }
+
+#footer td {
+  font-size: .8em;
+  color: #666; }
+
+#footer span a:link, #footer span a:visited {
+  padding: 0 5px; }
+
+#footer span.footerLarge a:link, #footer span.footerLarge a:visited {
+  color: white !important;
+  text-decoration: none !important; }
+
+#footer_icon {
+  margin-top: 12px; }
+
+#footer_icon span {
+  position: relative;
+  top: -5px;
+  margin-right: 11px;
+  color: #666;
+  font-size: .85em; }
+
 #navigation {
   background: #315369;
   -webkit-border-radius: 0;
@@ -581,6 +629,9 @@ Extenders
     bottom: 0;
     right: 50px;
     color: #fff; }
+
+#mission {
+  padding: 50px 0 0; }
 
 #welcome {
   padding: 50px 0; }
