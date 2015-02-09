@@ -27,13 +27,22 @@
           background: $GSAlightBlue;
           color: #fff!important;
           border-right: 0;
-        }
-        span {
-          font-size: 30px;
           display: block;
+        }
+        #GSA-small {
+          font-size: 33px;
+          display: block;
+          float: left;
+          margin-top: 3px;
+        }
+        #thisIs-small {
+          font-size: 12px;
+          display: block;
+          float: left;
+          line-height: 1;
+          padding-left: 90px;
           text-align: right;
-          margin-top: -20px;
-          margin-right: 20px;
+          padding-right: 3px;
         }
       }
       &.active {

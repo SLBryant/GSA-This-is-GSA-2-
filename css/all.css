@@ -474,13 +474,21 @@ Extenders
         #navigation ul li#logo a {
           background: #47a2e3;
           color: white !important;
-          border-right: 0; }
-        #navigation ul li#logo span {
-          font-size: 30px;
+          border-right: 0;
+          display: block; }
+        #navigation ul li#logo #GSA-small {
+          font-size: 33px;
           display: block;
+          float: left;
+          margin-top: 3px; }
+        #navigation ul li#logo #thisIs-small {
+          font-size: 12px;
+          display: block;
+          float: left;
+          line-height: 1;
+          padding-left: 90px;
           text-align: right;
-          margin-top: -20px;
-          margin-right: 20px; }
+          padding-right: 3px; }
       #navigation ul li.active a {
         background: #fff;
         color: #315369; }
@@ -612,7 +620,8 @@ Extenders
       padding: 0;
       margin: 0;
       font-weight: normal;
-      font-size: 20px; }
+      font-size: 20px;
+      color: #3a45bf; }
 
 #data {
   background: #edf0f5; }
