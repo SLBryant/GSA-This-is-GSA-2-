@@ -632,8 +632,8 @@ Extenders
   background: #edf0f5; }
   #data .foursquare article > div {
     float: none; }
-  #data .item:first-child {
-    padding-bottom: 100px; }
+  #data .item {
+    padding-bottom: 400px; }
 
 .item p {
   color: #999; }
@@ -704,9 +704,15 @@ Extenders
 .modal-lg .close {
   position: absolute;
   top: -15px;
-  z-index: 9;
-  right: -20px;
-  font-size: 35px; }
+  z-index: 10;
+  right: -25px;
+  font-size: 35px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  width: 35px;
+  background: #fff;
+  border: 2px solid #333; }
 
 .modal-content {
   padding: 15px 25px;
@@ -736,7 +742,7 @@ Extenders
 
 .print {
   position: absolute;
-  right: 15px;
+  right: 40px;
   top: 15px;
   z-index: 9;
   background: none;

@@ -106,7 +106,7 @@ GSA.modals_carousels = new function() {
 
 
         modalTemplate.on('shown.bs.modal', function (event) {
-            var CID = button.attr('data-source');
+            var CID = button.attr('id');
             var img = button.find('figure').find('img').attr('src');
             var title = button.find('h3').text();
             var intro = button.find('p').html();
