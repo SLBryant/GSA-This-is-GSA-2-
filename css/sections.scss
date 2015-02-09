@@ -87,6 +87,9 @@
 
 #priorities {
   background: $gray;
+    .item {
+      padding-bottom: 150px;  
+    }
 }
 
 .foursquare, #header-catcher {

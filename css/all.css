@@ -581,6 +581,8 @@ Extenders
 
 #priorities {
   background: #edf0f5; }
+  #priorities .item {
+    padding-bottom: 150px; }
 
 .foursquare article, #header-catcher article {
   display: -webkit-box;
