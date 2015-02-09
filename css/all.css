@@ -617,7 +617,8 @@ Extenders
     -webkit-align-self: flex-end;
     -moz-align-self: flex-end;
     -ms-flex-item-align: end;
-    align-self: flex-end; }
+    align-self: flex-end;
+    max-width: 100%; }
     .foursquare article > div h3, #header-catcher article > div h3 {
       padding: 0;
       margin: 0;

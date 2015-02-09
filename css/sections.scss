@@ -107,6 +107,7 @@
         padding-left: 20px;
         float: right;
         @include alignSelf(flex-end);
+        max-width: 100%;
         h3 {
           padding: 0;
           margin: 0;
