@@ -625,6 +625,8 @@ Extenders
       font-weight: normal;
       font-size: 20px;
       color: #3a45bf; }
+    .foursquare article > div p, #header-catcher article > div p {
+      color: #999; }
 
 #data {
   background: #edf0f5; }
@@ -632,6 +634,9 @@ Extenders
     float: none; }
   #data .item:first-child {
     padding-bottom: 100px; }
+
+.item p {
+  color: #999; }
 
 /* Carousel */
 .carousel-inner {
