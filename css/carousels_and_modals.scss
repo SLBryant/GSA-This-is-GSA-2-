@@ -78,7 +78,7 @@
 .modal-lg {
   .close {
     position: absolute;
-    top: 10px;
+    top: -15px;
     z-index: 9;
     right: -20px;
     font-size: 35px;
@@ -116,4 +116,13 @@
   img {
     max-width: 100%;
   }
+}
+
+.print {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 9;
+  background: none;
+  border: 1px solid #eaeaea;    
 }
