@@ -19,7 +19,7 @@ body{
 .main-container{
   box-shadow:1px 1px 10px #999;
   background:#fff;
-  width:1090px;
+  width:1090px!important; //IE 9 and below
   padding: 0 50px;
 }
 #superheader{
