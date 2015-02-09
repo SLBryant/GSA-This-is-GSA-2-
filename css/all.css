@@ -593,7 +593,8 @@ Extenders
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
-  margin: 10px 0; }
+  margin: 10px 0;
+  cursor: pointer; }
   .foursquare article figure, #header-catcher article figure {
     float: left;
     max-width: 80px;
@@ -604,15 +605,12 @@ Extenders
     -webkit-align-self: flex-end;
     -moz-align-self: flex-end;
     -ms-flex-item-align: end;
-    align-self: flex-end;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
-    width: 100%; }
+    align-self: flex-end; }
     .foursquare article > div h3, #header-catcher article > div h3 {
       padding: 0;
       margin: 0;
       font-weight: normal;
-      font-size: 22px; }
+      font-size: 20px; }
 
 #data {
   background: #edf0f5; }

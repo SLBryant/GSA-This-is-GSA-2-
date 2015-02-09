@@ -94,6 +94,7 @@
       @include flexbox;
       @include flexAlignItems(center);
       margin: 10px 0;
+      cursor: pointer;
       figure {
         float: left;
         max-width: 80px;
@@ -103,14 +104,11 @@
         padding-left: 20px;
         float: right;
         @include alignSelf(flex-end);
-        padding: 10px 0;
-        border-bottom: 1px solid #ccc;
-        width: 100%;  
         h3 {
           padding: 0;
           margin: 0;
           font-weight: normal;
-          font-size: 22px;
+          font-size: 20px;
         }
       }
     }

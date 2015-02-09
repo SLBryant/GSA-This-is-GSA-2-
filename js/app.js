@@ -91,16 +91,26 @@ GSA.navigation = new function() {
 
 GSA.modals_carousels = new function() {
     var modalTemplate = $('#modalView');
+    var button = '';
+    modalTemplate.modal({ show: false});
 
     this.modals = function () {
-        $('.modal-content').css('max-height', $(window).height() - 100);
+        modalTemplate.modal({ show: false}); // on load modal is not initiated
+
+        $('.foursquare article').click(function() { // initiate modal on click
+            modalTemplate.modal('show');
+            button = $(this);
+        });
+
+        $('.modal-content').css('max-height', $(window).height() - 100); // set max height to screen minus 100
+
 
         modalTemplate.on('shown.bs.modal', function (event) {
-            var button = $(event.relatedTarget);
+            console.log(button);
             var CID = button.attr('data-source');
-            var img = button.parentsUntil('article').siblings('figure').find('img').attr('src');
-            var title = button.text();
-            var intro = button.parentsUntil('article').find('p').html();
+            var img = button.find('figure').find('img').attr('src');
+            var title = button.find('h3').text();
+            var intro = button.find('p').html();
             var location = window.location.protocol + "//" + window.location.host + "/";
             if(img != undefined) {
                 $('#header-catcher').html('<article class="col-sm-12">' +
