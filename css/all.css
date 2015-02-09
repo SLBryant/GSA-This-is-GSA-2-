@@ -604,7 +604,10 @@ Extenders
     -webkit-align-self: flex-end;
     -moz-align-self: flex-end;
     -ms-flex-item-align: end;
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%; }
     .foursquare article > div h3, #header-catcher article > div h3 {
       padding: 0;
       margin: 0;
@@ -691,7 +694,10 @@ Extenders
 .modal-content {
   padding: 15px 25px;
   overflow-y: auto;
-  min-height: 500px; }
+  min-height: 500px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
 
 #header-catcher {
   margin-bottom: 15px; }
@@ -710,8 +716,6 @@ Extenders
   display: none; }
 #content-catcher img {
   max-width: 100%; }
-#content-catcher p {
-  color: #999; }
 
 body {
   background-color: #ced5f2;

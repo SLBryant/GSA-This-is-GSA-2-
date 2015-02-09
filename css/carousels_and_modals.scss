@@ -88,6 +88,7 @@
   padding: 15px 25px;
   overflow-y: auto;
   min-height: 500px;
+  @include border-radius(0);
 }
 #header-catcher {
   margin-bottom: 15px;
@@ -114,8 +115,5 @@
   }
   img {
     max-width: 100%;
-  }
-  p {
-    color: #999;
   }
 }
