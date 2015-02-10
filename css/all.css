@@ -672,7 +672,8 @@ Extenders
 #data {
   background: #edf0f5; }
   #data .foursquare article > div {
-    float: none; }
+    float: none;
+    padding-left: 0; }
 
 /* Carousel */
 .carousel-inner {
