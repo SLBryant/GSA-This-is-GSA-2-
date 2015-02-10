@@ -601,7 +601,7 @@ Extenders
         padding: 20px 30px 0;
         font-size: 30px; }
         #intro #hero hgroup h1 #huge-GSA {
-          font-size: 90px;
+          font-size: 75px;
           display: block;
           float: left;
           margin-top: -15px; }
@@ -673,8 +673,6 @@ Extenders
   background: #edf0f5; }
   #data .foursquare article > div {
     float: none; }
-  #data .item {
-    padding-bottom: 400px; }
 
 .item p {
   color: #999; }

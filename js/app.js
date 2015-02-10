@@ -257,4 +257,10 @@ $(function(){
     GSA.modals_carousels.modalPrint();
 
 
+    var dataHeight = $('#data').height(),
+        windowHeight = $(window).height(),
+        paddingNeeded = windowHeight - dataHeight;
+    console.log(paddingNeeded);
+    $('#data .item').css('padding-bottom',paddingNeeded);
+
 });
