@@ -67,7 +67,12 @@ GSA.navigation = new function() {
     this.scrollToSection = function() {
         menuItems.click(function(e){
             var href = $(this).attr('href'),
-                offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+                offsetTop;
+                if(href == '#intro') {
+                    offsetTop = href === "#" ? 0 : $(href).offset().top;    
+                } else {
+                    offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+                }
             $('html, body').stop().animate({
                 scrollTop: offsetTop
             }, 1000);
