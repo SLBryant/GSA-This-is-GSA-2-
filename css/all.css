@@ -742,13 +742,22 @@ Extenders
   top: -15px;
   z-index: 10;
   right: -25px;
-  font-size: 35px;
+  font-size: 27px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-  width: 35px;
+  width: 30px;
   background: #fff;
-  border: 2px solid #333; }
+  border: 2px solid #333;
+  -o-transition: 300 all;
+  -ms-transition: 300 all;
+  -moz-transition: 300 all;
+  -webkit-transition: 300 all;
+  transition: 300 all; }
+  .modal-lg .close:hover {
+    opacity: 1;
+    border-color: #315369;
+    color: #315369; }
 
 .modal-content {
   padding: 15px 25px;
