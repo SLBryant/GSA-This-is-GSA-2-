@@ -34,9 +34,8 @@
       h1 {
         background: $GSAlightBlue;
         padding: 20px 30px 0;
-        font-size: 30px;
         #huge-GSA {
-          font-size: 75px;
+          font-size: 65px;
           display: block;
           float: left;
           margin-top: -15px;
@@ -44,15 +43,16 @@
         #thisIs {
           display: block;
           float: left;
-          font-size: 32px;
+          font-size: 22px;
             #is {
-              padding-left: 42px;
+              padding-left: 30px;
             }
         }
 
       }
       h2 {
         padding: 0 30px;
+        font-size: 26px;  
       }
     }
   }
