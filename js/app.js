@@ -76,26 +76,27 @@ GSA.navigation = new function() {
         $window.scroll(function() {
             if ( $window.scrollTop() >= distance ) {
                 topMenu.addClass('locked');
-                $('.main-container').css('margin-top','50px');
+                $('#mission').css('margin-top','50px');
             } else {
                 topMenu.removeClass('locked');
-                $('.main-container').css('margin-top','0');
+                $('#mission').css('margin-top','0');
             }
         });
     }
 
     this.scrollorama = function() {
-        var tweeningElement = '#intro';
-        var heightOfTweeningElement = $(tweeningElement).innerHeight();
         controller.addTween(
-            tweeningElement,
+            '#intro',
             (new TimelineLite())
                 .append([
-                    TweenMax.fromTo($('#thisIs-small, #GSA-small'),1,
+                    TweenMax.fromTo($('#GSA-small'),.9,
+                        {css: {opacity:0}, immediateRender: true},
+                        {css: {opacity : 1}}),
+                    TweenMax.fromTo($('#thisIs-small'),.9,
                         {css: {opacity:0}, immediateRender: true},
                         {css: {opacity : 1}})
                 ]),
-            heightOfTweeningElement);
+            340);
     }
 };
 
@@ -235,6 +236,7 @@ $(function(){
     })
 
     GSA.navigation.stickyNav();
+    GSA.navigation.scrollorama();
     GSA.navigation.scrollToSection();
     GSA.navigation.highlightCurrentNavItem();
     GSA.navigation.scrollorama();
