@@ -574,9 +574,13 @@ Extenders
 
 #intro {
   background-image: url(../images/intro-bg.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-position: 0 0;
-  position: relative; }
+  height: 341px; }
   #intro .paddingFix {
     padding-left: 0;
     padding-right: 0; }

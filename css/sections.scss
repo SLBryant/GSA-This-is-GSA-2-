@@ -15,9 +15,8 @@
 
 #intro {
   background-image: url(../images/intro-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  position: relative;
+  @include coverBG();
+  height: 341px;
   .paddingFix {
     padding-left: 0;
     padding-right: 0;
@@ -73,7 +72,7 @@
 #welcome {
   padding: 30px 0 50px;
     #welcome-video {
-      margin-top: 15px; 
+      margin-top: 15px;
     }
     h4 {
       margin-top: 0;

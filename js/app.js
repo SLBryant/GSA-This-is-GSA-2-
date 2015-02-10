@@ -25,8 +25,6 @@ GSA.images = new function(){
 
 };
 
-
-
 GSA.navigation = new function() {
     var lastId,
         topMenu = $('#navigation'),
@@ -38,6 +36,10 @@ GSA.navigation = new function() {
             var item = $($(this).attr('href'));
             if (item.length) { return item; }
         });
+    var controller = $.superscrollorama({
+        triggerAtCenter: false,
+        playoutAnimations: true
+    });
 
     this.highlightCurrentNavItem = function () {
         $window.scroll(function() {
@@ -57,7 +59,7 @@ GSA.navigation = new function() {
                     .end().filter("[href=#"+id+"]").parent().addClass("active");
             }
 
-            if(menuItems.parent('li').hasClass('active')) {
+            if(menuItems.parent('li').index('active')) {
                 $('#logo').addClass('active');
             } else {
                 $('#logo').removeClass('active')
@@ -86,6 +88,20 @@ GSA.navigation = new function() {
                 $('.main-container').css('margin-top','0');
             }
         });
+    }
+
+    this.scrollorama = function() {
+        var tweeningElement = '#intro';
+        var heightOfTweeningElement = $(tweeningElement).innerHeight();
+        controller.addTween(
+            tweeningElement,
+            (new TimelineLite())
+                .append([
+                    TweenMax.fromTo($('#thisIs-small, #GSA-small'),.1,
+                        {css: {opacity:0}, immediateRender: true},
+                        {css: {opacity : 1}})
+                ]),
+            heightOfTweeningElement);
     }
 };
 
@@ -228,6 +244,7 @@ $(function(){
     GSA.navigation.stickyNav();
     GSA.navigation.scrollToSection();
     GSA.navigation.highlightCurrentNavItem();
+    GSA.navigation.scrollorama();
 
     GSA.modals_carousels.modals();
     GSA.modals_carousels.carousels('#priorities-carousel');
