@@ -20,13 +20,21 @@ GSA.images = new function(){
     this.introBackgroundRotator = function() {
         var images = ['images/Banner-DFC-SolarPanel.jpg', 'images/Banner-MoffetHanger.jpg', 'images/Banner-Infill-Area.jpg', 'images/Banner-SanYsidro.jpg'];
         var caption = ['Solar panel array at the Denver Federal Center, Denver, Colo.', 'Hanger One at Moffett Federal Airfield, Mountain View, Calif.','Technology in collaborative workspaces at GSA Headquarters, Washington, D.C.', 'San Ysidro Land Port of Entry, San Ysidro, Calif.' ];
+        var randomNumber = Math.floor(Math.random() * images.length);
         $('#intro').css({'background-image' : 'url(' + images[Math.floor(Math.random() * images.length)] + ')'});
         setInterval(function() {
-            var randomNumber = Math.floor(Math.random() * images.length);
-            $('#intro').css({'background-image' : 'url(' + images[randomNumber] + ')'});
-            $('#intro footer p').text(caption[randomNumber]);
-        },5000);
+            $('#intro').css({'background-image' : 'url(' + images[randomNumber++] + ')'});
+            if(randomNumber == images.length) {
+                randomNumber = 0;
+            }
+            $('#intro footer p').text(caption[($.inArray(randomNumber,caption) + 1) % caption.length]);
+        },8000);    
     }
+
+    var p = [ 645,629,648 ];
+    var start = 645;
+    var next = p[($.inArray(start, p) + 1) % p.length];
+    var prev = p[($.inArray(start, p) - 1 + p.length) % p.length];
 
 };
 
