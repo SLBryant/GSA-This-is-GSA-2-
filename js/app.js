@@ -69,7 +69,7 @@ GSA.navigation = new function() {
             var href = $(this).attr('href'),
                 offsetTop;
                 if(href == '#intro') {
-                    offsetTop = href === "#" ? 0 : $(href).offset().top;    
+                    offsetTop = href === "#" ? 0 : $(href).offset().top;
                 } else {
                     offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
                 }
@@ -117,7 +117,7 @@ GSA.modals_carousels = new function() {
         modalTemplate.modal({ show: false}); // on load modal is not initiated
 
         $('.foursquare article').click(function() { // initiate modal on click
-            $('.modal-content').css('max-height', $(window).height() - 100); // set max height to screen minus 100
+            $('.modal-content').css('height', $(window).height() - 50); // set max height to screen minus 100
             modalTemplate.modal('show');
             button = $(this);
         });
@@ -268,7 +268,6 @@ $(function(){
     var dataHeight = $('#data').height(),
         windowHeight = $(window).height(),
         paddingNeeded = windowHeight - dataHeight;
-    console.log(paddingNeeded);
     $('#data .item').css('padding-bottom',paddingNeeded);
 
 });
