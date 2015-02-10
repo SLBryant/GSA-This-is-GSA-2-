@@ -52,7 +52,7 @@
       }
       h2 {
         padding: 0 30px;
-        font-size: 26px;  
+        font-size: 26px;
       }
     }
   }
@@ -66,7 +66,7 @@
 
 #mission {
   padding: 70px 0 30px;
-  color: #999;
+  color: $grayText;
 }
 
 #welcome {
@@ -110,7 +110,7 @@
           color: $GSAlinks;
         }
         p {
-          color: #999;
+          color: $grayText;
         }
       }
     }
@@ -127,6 +127,3 @@
     }
 }
 
-.item p {
-  color: #999;
-}

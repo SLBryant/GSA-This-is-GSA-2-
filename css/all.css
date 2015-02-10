@@ -621,7 +621,7 @@ Extenders
 
 #mission {
   padding: 70px 0 30px;
-  color: #999; }
+  color: #666666; }
 
 #welcome {
   padding: 30px 0 100px; }
@@ -667,15 +667,12 @@ Extenders
       font-size: 18px;
       color: #3a45bf; }
     .foursquare article > div p, #header-catcher article > div p {
-      color: #999; }
+      color: #666666; }
 
 #data {
   background: #edf0f5; }
   #data .foursquare article > div {
     float: none; }
-
-.item p {
-  color: #999; }
 
 /* Carousel */
 .carousel-inner {
@@ -683,7 +680,7 @@ Extenders
 
 .carousel-control {
   width: 50px;
-  background: #999;
+  background: #666666;
   background: rgba(0, 0, 0, 0.2);
   background-image: none !important;
   opacity: 1; }
@@ -764,7 +761,7 @@ Extenders
 #header-catcher {
   margin-bottom: 15px; }
   #header-catcher h4 {
-    color: #999;
+    color: #666666;
     text-transform: none; }
 
 #modal-loading {
@@ -784,7 +781,7 @@ Extenders
   right: 40px;
   top: 15px;
   z-index: 9;
-  background: none;
+  background: #fff;
   border: 1px solid #eaeaea; }
 
 body {
