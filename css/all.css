@@ -616,8 +616,9 @@ Extenders
   #intro footer {
     position: absolute;
     bottom: 0;
-    right: 50px;
-    color: #fff; }
+    right: 50px; }
+    #intro footer p {
+      color: #fff; }
 
 #mission {
   padding: 70px 0 30px;
