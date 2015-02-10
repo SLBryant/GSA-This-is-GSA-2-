@@ -95,7 +95,7 @@ a {
     @include scale(1.1);
   }
   img {
-    @include transition(all 0.5s);
+    //@include transition(all 0.5s);
   }
 }
 

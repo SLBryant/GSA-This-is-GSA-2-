@@ -567,21 +567,6 @@ Extenders
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center; }
-  .banner-header figure {
-    margin: 0;
-    cursor: auto; }
-    .banner-header figure:hover img {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1); }
-    .banner-header figure img {
-      -o-transition: all 0.5s;
-      -ms-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s; }
   .banner-header h2 {
     color: #fff;
     padding: 150px 0;
@@ -631,10 +616,11 @@ Extenders
     color: #fff; }
 
 #mission {
-  padding: 50px 0 0; }
+  padding: 50px 0 0;
+  color: #999; }
 
 #welcome {
-  padding: 50px 0; }
+  padding: 30px 0; }
   #welcome #welcome-video {
     margin-top: 25px; }
   #welcome h4 {
@@ -881,9 +867,3 @@ a {
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1); }
-  .icon-block img {
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
