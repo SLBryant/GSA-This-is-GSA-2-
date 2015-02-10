@@ -598,21 +598,21 @@ Extenders
       text-transform: uppercase; }
       #intro #hero hgroup h1 {
         background: #47a2e3;
-        padding: 20px 50px 0;
+        padding: 20px 30px 0;
         font-size: 30px; }
         #intro #hero hgroup h1 #huge-GSA {
-          font-size: 100px;
+          font-size: 90px;
           display: block;
           float: left;
           margin-top: -15px; }
         #intro #hero hgroup h1 #thisIs {
           display: block;
           float: left;
-          font-size: 36px; }
+          font-size: 32px; }
           #intro #hero hgroup h1 #thisIs #is {
-            padding-left: 48px; }
+            padding-left: 42px; }
       #intro #hero hgroup h2 {
-        padding: 0 50px 7px; }
+        padding: 0 30px; }
   #intro footer {
     position: absolute;
     bottom: 0;
