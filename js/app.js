@@ -11,24 +11,24 @@ GSA.images = new function(){
             });
         }
 
-        $(['images/intro-bg.jpg',
-            'images/intro-bg-2.jpg',
-            'images/intro-bg-3.jpg'
-        ]).preload();
+        $(['images/Banner-DFC-SolarPanel.jpg', 'images/Banner-MoffetHanger.jpg', 'images/Banner-Infill-Area.jpg', 'images/Banner-SanYsidro.jpg']).preload();
     }
 
     this.introBackgroundRotator = function() {
         var images = ['images/Banner-DFC-SolarPanel.jpg', 'images/Banner-MoffetHanger.jpg', 'images/Banner-Infill-Area.jpg', 'images/Banner-SanYsidro.jpg'];
         var caption = ['Solar panel array at the Denver Federal Center, Denver, Colo.', 'Hanger One at Moffett Federal Airfield, Mountain View, Calif.','Technology in collaborative workspaces at GSA Headquarters, Washington, D.C.', 'San Ysidro Land Port of Entry, San Ysidro, Calif.' ];
         var randomNumber = Math.floor(Math.random() * images.length);
-        $('#intro').css({'background-image' : 'url(' + images[Math.floor(Math.random() * images.length)] + ')'});
+        $('#intro').css({'background-image' : 'url(' + images[randomNumber] + ')'});
+        $('#intro footer p').text(caption[randomNumber]);
         setInterval(function() {
-            $('#intro').css({'background-image' : 'url(' + images[randomNumber++] + ')'});
-            if(randomNumber == images.length) {
+            if(randomNumber == images.length -1) {
                 randomNumber = 0;
+            } else {
+                randomNumber ++;
             }
-            $('#intro footer p').text(caption[($.inArray(randomNumber,caption) + 1) % caption.length]);
-        },8000);    
+            $('#intro').css({'background-image' : 'url(' + images[randomNumber] + ')'});
+            $('#intro footer p').text(caption[randomNumber]);
+        },8000);
     }
 
     var p = [ 645,629,648 ];
@@ -249,9 +249,6 @@ GSA.modals_carousels = new function() {
 $(function(){
     GSA.images.cacheImages();
     GSA.images.introBackgroundRotator();
-    $('#logo a').click(function() {
-        GSA.images.introBackgroundRotator();
-    })
 
     GSA.navigation.stickyNav();
     GSA.navigation.scrollorama();
