@@ -58,12 +58,6 @@ GSA.navigation = new function() {
                     .parent().removeClass("active")
                     .end().filter("[href=#"+id+"]").parent().addClass("active");
             }
-
-            if(menuItems.parent('li').index('active')) {
-                $('#logo').addClass('active');
-            } else {
-                $('#logo').removeClass('active')
-            }
         });
     };
 
@@ -97,7 +91,7 @@ GSA.navigation = new function() {
             tweeningElement,
             (new TimelineLite())
                 .append([
-                    TweenMax.fromTo($('#thisIs-small, #GSA-small'),.1,
+                    TweenMax.fromTo($('#thisIs-small, #GSA-small'),1,
                         {css: {opacity:0}, immediateRender: true},
                         {css: {opacity : 1}})
                 ]),
@@ -114,11 +108,10 @@ GSA.modals_carousels = new function() {
         modalTemplate.modal({ show: false}); // on load modal is not initiated
 
         $('.foursquare article').click(function() { // initiate modal on click
+            $('.modal-content').css('max-height', $(window).height() - 100); // set max height to screen minus 100
             modalTemplate.modal('show');
             button = $(this);
         });
-
-        $('.modal-content').css('max-height', $(window).height() - 100); // set max height to screen minus 100
 
 
         modalTemplate.on('shown.bs.modal', function (event) {
