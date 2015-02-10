@@ -573,7 +573,6 @@ Extenders
     margin: 0; }
 
 #intro {
-  background-image: url(../images/intro-bg.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -618,7 +617,8 @@ Extenders
     bottom: 0;
     right: 50px; }
     #intro footer p {
-      color: #fff; }
+      color: #fff;
+      font-weight: bold; }
 
 #mission {
   padding: 70px 0 30px;

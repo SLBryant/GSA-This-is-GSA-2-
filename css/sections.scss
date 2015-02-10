@@ -14,7 +14,6 @@
 }
 
 #intro {
-  background-image: url(../images/intro-bg.jpg);
   @include coverBG();
   height: 341px;
   .paddingFix {
@@ -62,6 +61,7 @@
     right: 50px;
       p {
         color: #fff;
+        font-weight: bold;  
       }
   }
 }
