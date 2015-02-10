@@ -91,11 +91,12 @@ a {
   margin-top: 15px;
   cursor: pointer;
   overflow: hidden;
+  -webkit-perspective: 1000;
   &:hover img {
     @include scale(1.1);
   }
   img {
-    //@include transition(all 0.5s);
+    @include transition(all 0.5s);
   }
 }
 
