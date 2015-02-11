@@ -733,7 +733,15 @@ Extenders
       opacity: 1; }
       .icon-navigation figure.active-icon img {
         filter: none;
-        -webkit-filter: grayscale(0%); }
+        -webkit-filter: grayscale(0%);
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        -moz-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1); }
 
 #pad-left {
   margin-left: 150px; }
@@ -873,18 +881,13 @@ p {
 
 .icon-block {
   margin-top: 15px;
-  cursor: pointer;
-  overflow: hidden;
-  -webkit-perspective: 1000; }
-  .icon-block:hover img {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1); }
+  cursor: pointer; }
   .icon-block img {
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .icon-block img:hover {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1); }
