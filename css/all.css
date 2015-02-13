@@ -801,6 +801,13 @@ Extenders
   display: none; }
 #content-catcher img {
   max-width: 100%; }
+#content-catcher .item .figure {
+  background: #eaeaea; }
+  #content-catcher .item .figure img {
+    margin: 0 auto;
+    max-height: 300px; }
+#content-catcher .item p {
+  text-align: center; }
 
 .print {
   position: absolute;
