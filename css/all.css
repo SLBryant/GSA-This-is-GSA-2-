@@ -776,11 +776,13 @@ Extenders
   -moz-border-radius: 0;
   border-radius: 0; }
   .modal-content .carousel-indicators {
-    bottom: -50px; }
+    bottom: 0; }
     .modal-content .carousel-indicators li {
       border: 1px solid #47a2e3; }
       .modal-content .carousel-indicators li.active {
         background: #315369; }
+  .modal-content .carousel-inner {
+    padding-bottom: 30px; }
 
 #header-catcher article {
   cursor: auto; }
