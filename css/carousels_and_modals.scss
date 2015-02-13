@@ -67,9 +67,9 @@
         filter: none;
         -webkit-filter: grayscale(0%);
         @include transition(all 0.5s ease);
-        -webkit-transform: scale3d(1.1,1.1,1.1);
-        -moz-transform: scale3d(1.1,1.1,1.1);
-        transform: scale3d(1.1,1.1,1.1);
+        -webkit-transform: scale3d(1,1,1);
+        -moz-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
       }
     }
   }
@@ -103,6 +103,15 @@
   overflow-y: auto;
   min-height: 500px;
   @include border-radius(0);
+    .carousel-indicators {
+      bottom: -50px;
+        li {
+          border: 1px solid $GSAlightBlue;
+          &.active {
+            background: $GSAdarkBlue;
+          }
+        }
+    }
 }
 #header-catcher {
   margin-bottom: 15px;
