@@ -99,7 +99,7 @@
   }
 }
 .modal-content {
-  padding: 15px 25px;
+  padding: 0 25px;
   overflow-y: auto;
   min-height: 500px;
   @include border-radius(0);
@@ -114,7 +114,7 @@
     }
 }
 #header-catcher {
-  margin-bottom: 15px;
+  //margin-bottom: 15px;
     article {
       cursor: auto;
     }

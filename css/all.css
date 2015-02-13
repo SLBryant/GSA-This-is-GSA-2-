@@ -769,7 +769,7 @@ Extenders
     color: #315369; }
 
 .modal-content {
-  padding: 15px 25px;
+  padding: 0 25px;
   overflow-y: auto;
   min-height: 500px;
   -webkit-border-radius: 0;
@@ -782,13 +782,11 @@ Extenders
       .modal-content .carousel-indicators li.active {
         background: #315369; }
 
-#header-catcher {
-  margin-bottom: 15px; }
-  #header-catcher article {
-    cursor: auto; }
-  #header-catcher h4 {
-    color: #666666;
-    text-transform: none; }
+#header-catcher article {
+  cursor: auto; }
+#header-catcher h4 {
+  color: #666666;
+  text-transform: none; }
 
 #modal-loading {
   position: absolute;
