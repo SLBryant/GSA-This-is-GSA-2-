@@ -818,7 +818,7 @@ Extenders
   border: 1px solid #eaeaea; }
 
 .no-pad-left {
-  padding-left: 0; }
+  padding-left: 0 !important; }
 
 body {
   background-color: #ced5f2;
