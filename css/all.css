@@ -817,6 +817,9 @@ Extenders
   background: #fff;
   border: 1px solid #eaeaea; }
 
+.no-pad-left {
+  padding-left: 0; }
+
 body {
   background-color: #ced5f2;
   font-family: Helvetica, Verdana, Arial, Garuda, sans-serif; }

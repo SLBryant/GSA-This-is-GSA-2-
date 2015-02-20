@@ -150,7 +150,7 @@
       background: #eaeaea;
       img {
         margin: 0 auto;
-        max-height: 300px;      
+        max-height: 300px;
       }
     }
     p {
@@ -166,4 +166,7 @@
   z-index: 9;
   background: #fff;
   border: 1px solid #eaeaea;
+}
+.no-pad-left {
+  padding-left: 0;
 }

@@ -152,8 +152,8 @@ GSA.modals_carousels = new function() {
                 '</div>' +
                 '</article>');
             } else {
-                $('#header-catcher').html('<article class="col-sm-12">' +
-                '<div>' +
+                $('#header-catcher').html('<article class="col-sm-10">' +
+                '<div class="no-pad-left">' +
                 '<h2>' + title + '</h2>' +
                 '</div>' +
                 '</article>');
@@ -173,7 +173,8 @@ GSA.modals_carousels = new function() {
 
     this.modalPrint = function() {
         $('.print').click(function(){
-                $( ".modal-content" ).print();
+
+                $( "#content-catcher" ).print();
 
                 return( false );
         });
