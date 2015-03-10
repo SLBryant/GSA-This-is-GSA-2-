@@ -1,6 +1,47 @@
 if(!GSA){
     var GSA = {}
 }
+var ieUserAgent = {
+    init: function () {
+        // Get the user agent string
+        var ua = navigator.userAgent;
+        this.compatibilityMode = false;
+        console.log('ua: '+ua);
+
+        // Detect whether or not the browser is IE
+        var ieRegex = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+        if (ieRegex.exec(ua) == null)
+            this.exception = "The user agent detected does not contain Internet Explorer.";
+
+        // Get the current "emulated" version of IE
+        this.renderVersion = parseFloat(RegExp.$1);
+        this.version = this.renderVersion;
+
+        // Check the browser version with the rest of the agent string to detect compatibility mode
+        if (ua.indexOf("Trident/6.0") > -1) {
+            if (ua.indexOf("MSIE 7.0") > -1) {
+                this.compatibilityMode = true;
+                this.version = 10;
+            }
+        }
+        else if (ua.indexOf("Trident/5.0") > -1) {
+            if (ua.indexOf("MSIE 7.0") > -1) {
+                this.compatibilityMode = true;
+                this.version = 9;
+            }
+        }
+        else if (ua.indexOf("Trident/4.0") > -1) {
+            if (ua.indexOf("MSIE 7.0") > -1) {
+                this.compatibilityMode = true;
+                this.version = 8;
+            }
+        }
+        else if (ua.indexOf("MSIE 7.0") > -1)
+            this.version = 7;
+        else
+            this.version = 6;
+    }
+};
 
 GSA.images = new function(){
 
@@ -244,12 +285,15 @@ GSA.modals_carousels = new function() {
     }
 };
 
-
 /* /////////////////////////
     DOCUMENT READY        ///
 /////////////////////////*/
 
 $(function(){
+
+    // Initialize the ieUserAgent object
+    ieUserAgent.init();
+
     GSA.images.cacheImages();
     GSA.images.introBackgroundRotator();
 
@@ -279,5 +323,21 @@ $(function(){
         windowHeight = $(window).height(),
         paddingNeeded = windowHeight - dataHeight;
     $('#data .item').css('padding-bottom',paddingNeeded);
+
+
+    // Do stuff
+    console.log('comp: '+ieUserAgent.compatibilityMode)
+    if (ieUserAgent.compatibilityMode == true){
+        if(ieUserAgent.version === 8){
+            $('#ieModal').modal({ show: true}); // on load modal is not initiated
+            console.log('true 8');
+        }
+        if(ieUserAgent.version === 9){
+            console.log('true 9');
+        }
+    } else {
+        console.log('false ie');
+    }
+
 
 });
