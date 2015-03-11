@@ -336,6 +336,7 @@ $(function(){
             console.log('IE 8 Compat');
         }
         if(ieUserAgent.version === 9){
+            $('#ieModal').modal({ show: true}); // on load modal is not initiated
             console.log('IE 9 Compat');
         }
     } else {
