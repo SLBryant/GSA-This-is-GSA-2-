@@ -332,11 +332,13 @@ $(function(){
     console.log('compatibilityMode: '+ieUserAgent.compatibilityMode)
     if (ieUserAgent.compatibilityMode == true){
         if(ieUserAgent.version === 8){
-            $('#ieModal').modal({ show: true}); // on load modal is not initiated
+            $('#ieModal').modal({ show: true});
+            $('.compatibility-mode-resource').attr('href','https://answers.microsoft.com/en-us/ie/forum/ie8-windows_7/turn-off-compatibility-view/33bb7aaf-ab73-47e6-8b5d-d466162ee1cc')
             console.log('IE 8 Compat');
         }
         if(ieUserAgent.version === 9){
-            $('#ieModal').modal({ show: true}); // on load modal is not initiated
+            $('#ieModal').modal({ show: true});
+            $('.compatibility-mode-resource').attr('href','http://windows.microsoft.com/en-us/internet-explorer/products/ie-9/features/compatibility-view')
             console.log('IE 9 Compat');
         }
     } else {
