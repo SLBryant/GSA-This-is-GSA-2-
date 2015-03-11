@@ -326,17 +326,17 @@ $(function(){
 
 
     // Do stuff
-    console.log('comp: '+ieUserAgent.compatibilityMode)
+    console.log('compatibilityMode: '+ieUserAgent.compatibilityMode)
     if (ieUserAgent.compatibilityMode == true){
         if(ieUserAgent.version === 8){
             $('#ieModal').modal({ show: true}); // on load modal is not initiated
-            console.log('true 8');
+            console.log('IE 8 Compat');
         }
         if(ieUserAgent.version === 9){
-            console.log('true 9');
+            console.log('IE 9 Compat');
         }
     } else {
-        console.log('false ie');
+        console.log('Not Compatibility Mode');
     }
 
 
