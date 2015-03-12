@@ -58,6 +58,7 @@ GSA.images = new function(){
     this.introBackgroundRotator = function() {
         var images = ['images/Banner-DFC-SolarPanel.jpg', 'images/Banner-MoffetHanger.jpg', 'images/Banner-Infill-Area.jpg', 'images/Banner-SanYsidro.jpg'];
         var caption = ['Solar panel array at the Denver Federal Center, Denver, Colo.', 'Hangar One at Moffett Federal Airfield, Mountain View, Calif.','Technology in collaborative workspaces at GSA Headquarters, Washington, D.C.', 'San Ysidro Land Port of Entry, San Ysidro, Calif.' ];
+        var tags = ['Photo of a solar panel array at the GSA-owned Denver Federal Center in Denver, Colorado', 'Photo of the side view of Hangar One, an airship storage facility in Mountain View, CA, and one of the largest freestanding structures in the world.', 'Photo of the interior of a collaborative office space at GSA Headquarters in Washington, DC', 'Photo of the busy San Ysidro land port of entry in San Ysidro, California'];
         var randomNumber = Math.floor(Math.random() * images.length);
         $('#intro').css({'background-image' : 'url(' + images[randomNumber] + ')'});
         $('#intro footer p').text(caption[randomNumber]);
@@ -67,7 +68,7 @@ GSA.images = new function(){
             } else {
                 randomNumber ++;
             }
-            $('#intro').css({'background-image' : 'url(' + images[randomNumber] + ')'});
+            $('#intro').css({'background-image' : 'url(' + images[randomNumber] + ')'}).attr('alt',tags[randomNumber]);
             $('#intro footer p').text(caption[randomNumber]);
         },8000);
     }
