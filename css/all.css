@@ -911,3 +911,13 @@ p {
       -webkit-transform: scale3d(1, 1, 1);
       -moz-transform: scale3d(1, 1, 1);
       transform: scale3d(1, 1, 1); }
+
+#ieModal .modal-content {
+  background: #eaeaea; }
+  #ieModal .modal-content .ie-message {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 25px; }
