@@ -1,6 +1,7 @@
 if(!GSA){
     var GSA = {}
 }
+var gaDimensions = {};
 var ieUserAgent = {
     init: function () {
         // Get the user agent string
@@ -298,8 +299,6 @@ $(function(){
 
     // Initialize the ieUserAgent object
     ieUserAgent.init();
-
-    var gaDimensions = {};
 
 
     GSA.images.cacheImages();
