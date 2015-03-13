@@ -171,8 +171,8 @@ GSA.modals_carousels = new function() {
         $('.foursquare article').click(function() { // initiate modal on click
             if($(this).attr('id')) {
                 $('.modal-content').css('height', $(window).height() - 50); // set max height to screen minus 100
-                modalTemplate.modal('show');
                 button = $(this);
+                modalTemplate.modal('show');
             }
         });
 
