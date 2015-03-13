@@ -286,9 +286,6 @@ GSA.modals_carousels = new function() {
     }
 };
 
-GSA.GTMinit = new function(){
-    var gaDimensions = {};
-}
 
 /* /////////////////////////
     DOCUMENT READY        ///
@@ -302,7 +299,8 @@ $(function(){
     // Initialize the ieUserAgent object
     ieUserAgent.init();
 
-    GSA.GTMinit();
+    var gaDimensions = {};
+
 
     GSA.images.cacheImages();
     GSA.images.introBackgroundRotator();
