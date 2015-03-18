@@ -669,9 +669,9 @@ Extenders
     .foursquare article > div p, #header-catcher article > div p {
       color: #666666; }
 
-#data {
+#gsa-data {
   background: #edf0f5; }
-  #data .foursquare article > div {
+  #gsa-data .foursquare article > div {
     float: none;
     padding-left: 0; }
 
