@@ -3,6 +3,7 @@ if(!GSA){
 }
 var gaDimensions = {};
 var gaCrumb = window.location.href.split('gsa.gov')[1];
+
 var ieUserAgent = {
     init: function () {
         // Get the user agent string
@@ -258,6 +259,8 @@ GSA.modals_carousels = new function() {
             var slideNum = button.index();
             $(carouselID).find('.icon-navigation').find('figure').removeClass('active-icon');
             $(carouselID).find('.icon-navigation').find('figure').eq(slideNum).addClass('active-icon');
+             var triggerElement = document.activeElement;
+             triggerElement.focus();
         });
 
     };
@@ -276,7 +279,7 @@ GSA.modals_carousels = new function() {
         var tabButton = $('#navigation li').eq(buttonEQ).find('a');
         tabButton.click(function() {
             $(carouselID).carousel(0);
-        })
+        });
     }
 
     this.iconNavigation = function(carouselID) {
