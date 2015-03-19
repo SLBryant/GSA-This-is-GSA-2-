@@ -34,10 +34,10 @@ GSA.images = new function(){
         },8000);
     }
 
-    var p = [ 645,629,648 ];
+    /*var p = [ 645,629,648 ];
     var start = 645;
     var next = p[($.inArray(start, p) + 1) % p.length];
-    var prev = p[($.inArray(start, p) - 1 + p.length) % p.length];
+    var prev = p[($.inArray(start, p) - 1 + p.length) % p.length];*/
 
 };
 
@@ -74,7 +74,7 @@ GSA.navigation = new function() {
                     .parent().removeClass("active")
                     .end().filter("[href=#"+id+"]").parent().addClass("active");
                 if(id != 'intro') {
-                    History.replaceState(null, null,'#'+id);
+                    History.pushState(null, null,'/thisisgsa/#/'+id);
                 };
             }
         });
@@ -220,7 +220,8 @@ GSA.modals_carousels = new function() {
             var slideNum = button.index();
             $(carouselID).find('.icon-navigation').find('figure').removeClass('active-icon');
             $(carouselID).find('.icon-navigation').find('figure').eq(slideNum).addClass('active-icon');
-            History.pushState({}, '', '#/'+carouselID+'/'+slideNum); 
+            var carouselName = carouselID.substring(1, carouselID.length);
+            History.pushState(null, null, '/thisisgsa/#/'+carouselName+'/'+slideNum);
              var triggerElement = document.activeElement;
              triggerElement.focus();
         });
