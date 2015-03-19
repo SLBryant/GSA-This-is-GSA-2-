@@ -116,7 +116,7 @@ GSA.navigation = new function() {
                     .parent().removeClass("active")
                     .end().filter("[href=#"+id+"]").parent().addClass("active");
                 if(id != 'intro') {
-                    history.pushState(null, null, '#'+id);
+                    History.pushState(null, 'This is GSA',id);
                 };
             }
         });
@@ -262,10 +262,11 @@ GSA.modals_carousels = new function() {
             var slideNum = button.index();
             $(carouselID).find('.icon-navigation').find('figure').removeClass('active-icon');
             $(carouselID).find('.icon-navigation').find('figure').eq(slideNum).addClass('active-icon');
-            History.pushState(null,null,'#slide'+slideNum);
+            History.pushState(null,'This is GSA','#slide-'+slideNum);
              var triggerElement = document.activeElement;
              triggerElement.focus();
         });
+
     };
 
     this.slideItemHeight = function(carouselID) {
