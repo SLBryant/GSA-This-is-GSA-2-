@@ -262,7 +262,7 @@ GSA.modals_carousels = new function() {
             var slideNum = button.index();
             $(carouselID).find('.icon-navigation').find('figure').removeClass('active-icon');
             $(carouselID).find('.icon-navigation').find('figure').eq(slideNum).addClass('active-icon');
-            History.replaceState(null,null, carouselID+'-slide'+slideNum);
+            History.pushState({}, '', '#/'+carouselID+'/'+slideNum); 
              var triggerElement = document.activeElement;
              triggerElement.focus();
         });
