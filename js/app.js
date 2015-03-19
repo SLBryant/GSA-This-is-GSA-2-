@@ -263,9 +263,6 @@ $(function(){
     //console.log polyfill for IE
     if ( ! window.console ) console = { log: function(){} };
 
-    // Initialize the ieUserAgent object
-    ieUserAgent.init();
-
 
     GSA.images.cacheImages();
     GSA.images.introBackgroundRotator();
