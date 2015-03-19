@@ -74,7 +74,7 @@ GSA.navigation = new function() {
                     .parent().removeClass("active")
                     .end().filter("[href=#"+id+"]").parent().addClass("active");
                 if(id != 'intro') {
-                    History.pushState(null, null,'/thisisgsa/#/'+id);
+                    History.pushState(null, null,'/thisisgsa/'+id);
                 };
             }
         });
@@ -221,7 +221,7 @@ GSA.modals_carousels = new function() {
             $(carouselID).find('.icon-navigation').find('figure').removeClass('active-icon');
             $(carouselID).find('.icon-navigation').find('figure').eq(slideNum).addClass('active-icon');
             var carouselName = carouselID.substring(1, carouselID.length);
-            History.pushState(null, null, '/thisisgsa/#/'+carouselName+'/'+slideNum);
+            History.pushState(null, null, '/thisisgsa/'+carouselID+'/'+slideNum);
              var triggerElement = document.activeElement;
              triggerElement.focus();
         });
