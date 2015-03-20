@@ -227,9 +227,9 @@ GSA.modals_carousels = new function() {
             var slideNum = button.index();
             $(carouselID).find('.icon-navigation').find('figure').removeClass('active-icon');
             $(carouselID).find('.icon-navigation').find('figure').eq(slideNum).addClass('active-icon');
-            //History.pushState(null, null, '/thisisgsa/'+carouselID+'/'+slideNum);
+            if(carouselID == '#priorities-carousel'){var carouselName = 'priorities'} else { var carouselName = 'gsa-data'}
             if(Modernizr.history){
-                history.pushState({}, '', '#/'+carouselID+'/'+slideNum); 
+                history.pushState({}, '', '#/'+carouselName+'/'+slideNum);
             }
             else{
                 window.location.hash = '/'+carouselID+'/'+slideNum;
