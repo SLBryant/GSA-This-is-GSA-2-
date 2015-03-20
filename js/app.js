@@ -57,6 +57,13 @@ GSA.navigation = new function() {
         playoutAnimations: true
     });
 
+    //bind GA updates to event "newState"
+    $(document).on('newState',function(){
+        if(ga){
+            ga('send', 'pageview', '/thisisgsa-test/'+window.location.hash);
+        }
+    });
+
     this.highlightCurrentNavItem = function () {
         $window.scroll(function() {
             var fromTop = $(this).scrollTop()+topMenuHeight;
@@ -74,13 +81,13 @@ GSA.navigation = new function() {
                     .parent().removeClass("active")
                     .end().filter("[href=#"+id+"]").parent().addClass("active");
                 if(id != 'intro') {
-                    //History.pushState(null, null,'/thisisgsa/'+id);
                     if(Modernizr.history){
                         history.pushState({}, '', '#/'+id); 
                     }
                     else{
                         window.location.hash = '/'+id;
                     }
+                    $(document).trigger('newState');
                 };
             }
         });
@@ -234,6 +241,7 @@ GSA.modals_carousels = new function() {
             else{
                 window.location.hash = '/'+carouselName+'/'+slideNum;
             }
+            $(document).trigger('newState');
         });
 
     };
