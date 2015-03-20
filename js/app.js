@@ -75,6 +75,12 @@ GSA.navigation = new function() {
                     .end().filter("[href=#"+id+"]").parent().addClass("active");
                 if(id != 'intro') {
                     //History.pushState(null, null,'/thisisgsa/'+id);
+                    if(Modernizr.history){
+                        history.pushState({}, '', '#/'+id); 
+                    }
+                    else{
+                        window.location.hash = '/'+id;
+                    }
                 };
             }
         });
@@ -222,6 +228,12 @@ GSA.modals_carousels = new function() {
             $(carouselID).find('.icon-navigation').find('figure').removeClass('active-icon');
             $(carouselID).find('.icon-navigation').find('figure').eq(slideNum).addClass('active-icon');
             //History.pushState(null, null, '/thisisgsa/'+carouselID+'/'+slideNum);
+            if(Modernizr.history){
+                history.pushState({}, '', '#/'+carouselID+'/'+slideNum); 
+            }
+            else{
+                window.location.hash = '/'+carouselID+'/'+slideNum;
+            }
         });
 
     };
