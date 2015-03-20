@@ -153,6 +153,10 @@ GSA.modals_carousels = new function() {
             }
         });
 
+        $('.foursquare article a').click(function(e) {
+            e.preventDefault();
+        });
+
 
         modalTemplate.on('shown.bs.modal', function (event) {
             var CID = button.attr('id');
@@ -308,9 +312,9 @@ $(function(){
     GSA.modals_carousels.modalPrint();
 
 
-    var dataHeight = $('#data').height(),
+    var dataHeight = $('#gsa-data').height(),
         windowHeight = $(window).height(),
         paddingNeeded = windowHeight - dataHeight;
-    $('#data .item').css('padding-bottom',paddingNeeded);
+    $('#gsa-data .item').css('padding-bottom',paddingNeeded);
 
 });
