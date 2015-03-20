@@ -44,6 +44,9 @@ h5 {
 }
 a {
   color: $GSAlinks;
+    &:focus {
+      outline: 10px dotted $GSAblue;
+    }
 }
 p {
   color: $grayText;
