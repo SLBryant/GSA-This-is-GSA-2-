@@ -60,7 +60,7 @@ GSA.navigation = new function() {
     //bind GA updates to event "newState"
     $(document).on('newState',function(){
         if(ga){
-            ga('send', 'pageview', '/thisisgsa-test/'+window.location.hash);
+            ga('send', 'pageview', '/thisisgsa/'+window.location.hash);
         }
     });
 
@@ -285,6 +285,9 @@ $(function(){
 
     //console.log polyfill for IE
     if ( ! window.console ) console = { log: function(){} };
+
+    //clear existing state info
+    history.pushState({}, '', '#');
 
 
     GSA.images.cacheImages();
