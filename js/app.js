@@ -232,7 +232,7 @@ GSA.modals_carousels = new function() {
                 history.pushState({}, '', '#/'+carouselName+'/'+slideNum);
             }
             else{
-                window.location.hash = '/'+carouselID+'/'+slideNum;
+                window.location.hash = '/'+carouselName+'/'+slideNum;
             }
         });
 
