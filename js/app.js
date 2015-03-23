@@ -288,8 +288,13 @@ $(function(){
     //console.log polyfill for IE
     if ( ! window.console ) console = { log: function(){} };
 
+    if(Modernizr.history){
     //clear existing state info
-    history.pushState({}, '', '#');
+        history.pushState({}, '', '#');
+    }
+    else{
+        window.location.hash = '';
+    }
 
 
     GSA.images.cacheImages();
