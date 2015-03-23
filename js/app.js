@@ -156,7 +156,7 @@ GSA.modals_carousels = new function() {
         $('.foursquare article a').click(function(e) {
             if($(this).parents('.foursquare').attr('id') != 'external-links') {
                e.preventDefault();
-            } 
+            }
         });
 
 
@@ -229,7 +229,7 @@ GSA.modals_carousels = new function() {
             } else {
                 $(this).find('.right').css('display','block');
             }
-            $('.active-icon').children('a').focus();
+            $(carouselID+ ' .active-icon').children('a').focus();
         });
 
     };
