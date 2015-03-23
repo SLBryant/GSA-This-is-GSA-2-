@@ -331,8 +331,13 @@ $(function(){
     // Initialize the ieUserAgent object
     ieUserAgent.init();
 
+    if(Modernizr.history){
     //clear existing state info
-    history.pushState({}, '', '#');
+        history.pushState({}, '', '#');
+    }
+    else{
+        window.location.hash = '';
+    }
 
 
     GSA.images.cacheImages();
