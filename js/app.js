@@ -154,7 +154,9 @@ GSA.modals_carousels = new function() {
         });
 
         $('.foursquare article a').click(function(e) {
-            e.preventDefault();
+            if($(this).parents('.foursquare').attr('id') != 'external-links') {
+               e.preventDefault();
+            } 
         });
 
 
