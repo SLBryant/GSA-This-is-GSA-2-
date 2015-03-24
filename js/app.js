@@ -320,6 +320,17 @@ GSA.modals_carousels = new function() {
 };
 
 
+GSA.hashState = function() {
+    var state = window.location.hash.replace('#/','').split('/');
+    if(state.length = 1){
+        $('#navigation a[href=#'+state[0]+']').click();
+    }
+    if(state.length = 2){
+        $('#navigation a[href=#'+state[0]+']').click();
+        $('#'+state[0]).carousel(state[1]);
+    }
+};
+
 /* /////////////////////////
     DOCUMENT READY        ///
 /////////////////////////*/
@@ -330,10 +341,6 @@ $(function(){
     if ( ! window.console ) console = { log: function(){} };
     // Initialize the ieUserAgent object
     ieUserAgent.init();
-
-    //clear existing state info
-    history.pushState({}, '', '#');
-
 
     GSA.images.cacheImages();
     GSA.images.introBackgroundRotator();
@@ -364,6 +371,8 @@ $(function(){
         windowHeight = $(window).height(),
         paddingNeeded = windowHeight - dataHeight;
     $('#gsa-data .item').css('padding-bottom',paddingNeeded);
+
+    GSA.hashState();
 
     // Do stuff
     if (ieUserAgent.compatibilityMode == true){
