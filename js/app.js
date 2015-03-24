@@ -331,13 +331,8 @@ $(function(){
     // Initialize the ieUserAgent object
     ieUserAgent.init();
 
-    if(Modernizr.history){
     //clear existing state info
-        history.pushState({}, '', '#');
-    }
-    else{
-        window.location.hash = '';
-    }
+    history.pushState({}, '', '#');
 
 
     GSA.images.cacheImages();
@@ -381,6 +376,5 @@ $(function(){
             $('.compatibility-mode-resource').attr('href','http://windows.microsoft.com/en-us/internet-explorer/products/ie-9/features/compatibility-view')
         }
     }
-
 
 });
