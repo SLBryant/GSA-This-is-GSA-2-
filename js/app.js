@@ -382,9 +382,5 @@ $(function(){
         }
     }
 
-    $('.mainlk').focus(function() {
-        $(this).addClass('over');
-        $(this).parent('.tab').find('.submenu').css('display','block');
-    });
 
 });
