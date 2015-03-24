@@ -372,7 +372,7 @@ $(function(){
         paddingNeeded = windowHeight - dataHeight;
     $('#gsa-data .item').css('padding-bottom',paddingNeeded);
 
-    GSA.hashState();
+    /*GSA.hashState();*/
 
     // Do stuff
     if (ieUserAgent.compatibilityMode == true){
