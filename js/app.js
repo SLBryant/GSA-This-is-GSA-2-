@@ -100,7 +100,7 @@ GSA.navigation = new function() {
 
     //bind GA updates to event "newState"
     $(document).on('newState',function(){
-        if(ga){
+        if(typeof ga !== "undefined"){
             ga('send', 'pageview', '/thisisgsa/'+window.location.hash);
         }
     });
