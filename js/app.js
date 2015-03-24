@@ -2,7 +2,7 @@ if(!GSA){
     var GSA = {}
 }
 var gaDimensions = {};
-var gaCrumb = window.location.href.split('gsa.gov')[1];
+var gaCrumb = '/thisisgsa/';
 var ieUserAgent = {
     init: function () {
         // Get the user agent string
