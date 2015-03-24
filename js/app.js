@@ -370,11 +370,11 @@ $(function(){
     var dataHeight = $('#gsa-data').height(),
         windowHeight = $(window).height(),
         paddingNeeded = windowHeight - dataHeight;
-    $('#gsa-data .item').css('padding-bottom',paddingNeeded);
+    $('#gsa-data .item').css('padding-bottom',paddingNeeded / 2);
 
     /*GSA.hashState();*/
 
-    // Do stuff
+
     if (ieUserAgent.compatibilityMode == true){
         if(ieUserAgent.version === 8){
             $('#ieModal').modal({ show: true});
@@ -385,5 +385,12 @@ $(function(){
             $('.compatibility-mode-resource').attr('href','http://windows.microsoft.com/en-us/internet-explorer/products/ie-9/features/compatibility-view')
         }
     }
+
+   /* $('.mainlk').focus(function() {
+        $(this).addClass('over');
+        $(this).parent('.tab').find('.submenu').css('display','block').addClass('current-open');
+    });*/
+
+    //$('.current-open').find('ul:first-child').find('li:first-child a').focus();
 
 });
