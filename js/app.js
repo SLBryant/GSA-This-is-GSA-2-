@@ -370,7 +370,7 @@ $(function(){
     var dataHeight = $('#gsa-data').height(),
         windowHeight = $(window).height(),
         paddingNeeded = windowHeight - dataHeight;
-    $('#gsa-data .item').css('padding-bottom',paddingNeeded / 2);
+    $('#gsa-data .item').css('min-height',windowHeight);
 
     /*GSA.hashState();*/
 
