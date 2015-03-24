@@ -2,7 +2,7 @@ if(!GSA){
     var GSA = {}
 }
 var gaDimensions = {};
-var gaCrumb = window.location.href.split('gsa.gov')[1];
+var gaCrumb = '/thisisgsa/';
 var ieUserAgent = {
     init: function () {
         // Get the user agent string
@@ -100,7 +100,7 @@ GSA.navigation = new function() {
 
     //bind GA updates to event "newState"
     $(document).on('newState',function(){
-        if(ga){
+        if(typeof ga !== "undefined"){
             ga('send', 'pageview', '/thisisgsa/'+window.location.hash);
         }
     });
