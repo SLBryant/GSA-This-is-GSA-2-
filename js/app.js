@@ -276,6 +276,19 @@ GSA.modals_carousels = new function() {
             $(this).addClass('active-icon');
         })
     }
+
+};
+
+GSA.hashState = function() {
+    var state = window.location.hash.replace('#/','').split('/');
+
+    if(state.length = 1){
+        $('#navigation a[href=#'+state[0]+']').click();
+    }
+    if(state.length = 2){
+        $('#navigation a[href=#'+state[0]+']').click();
+        $('#'+state[0]).carousel(state[1]);
+    }
 };
 
 
@@ -287,15 +300,6 @@ $(function(){
 
     //console.log polyfill for IE
     if ( ! window.console ) console = { log: function(){} };
-
-    if(Modernizr.history){
-    //clear existing state info
-        history.pushState({}, '', '#');
-    }
-    else{
-        window.location.hash = '';
-    }
-
 
     GSA.images.cacheImages();
     GSA.images.introBackgroundRotator();
@@ -326,5 +330,8 @@ $(function(){
         windowHeight = $(window).height(),
         paddingNeeded = windowHeight - dataHeight;
     $('#gsa-data .item').css('padding-bottom',paddingNeeded);
+
+    //Get initial page state
+    GSA.hashState();
 
 });
