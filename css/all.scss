@@ -108,13 +108,14 @@ p {
       }
     }
 }
-#ieModal .modal-content {
-  background: #eaeaea;
-    .close {
-      background: #fff;
-      top: 20px;
-      right: 0;
-    }
+#ieModal {
+  .close {
+    background: #fff;
+    top: 20px;
+    right: 0;
+  }
+  .modal-content {
+    background: #eaeaea;
     .ie-message {
       position: absolute;
       top: 30%;
@@ -123,6 +124,7 @@ p {
       text-align: center;
       padding: 25px;
     }
+  }
 }
 
 
