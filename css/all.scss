@@ -110,6 +110,11 @@ p {
 }
 #ieModal .modal-content {
   background: #eaeaea;
+    .close {
+      background: #fff;
+      top: 20px;
+      right: 0;
+    }
     .ie-message {
       position: absolute;
       top: 30%;

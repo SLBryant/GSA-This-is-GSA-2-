@@ -918,6 +918,10 @@ p {
 
 #ieModal .modal-content {
   background: #eaeaea; }
+  #ieModal .modal-content .close {
+    background: #fff;
+    top: 20px;
+    right: 0; }
   #ieModal .modal-content .ie-message {
     position: absolute;
     top: 30%;
