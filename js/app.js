@@ -386,11 +386,15 @@ $(function(){
         }
     }
 
-   /* $('.mainlk').focus(function() {
+   $('.mainlk').focus(function() {
         $(this).addClass('over');
         $(this).parent('.tab').find('.submenu').css('display','block').addClass('current-open');
-    });*/
-
-    //$('.current-open').find('ul:first-child').find('li:first-child a').focus();
-
+   }).blur(function () {
+          var focusable =  $('.submenu').removeClass('current-open');
+   });
+    $(document).keydown(function(e) {
+        if (e.keyCode == 9 && $('.current-open').length > 0) {
+            $('.current-open ul:first-child li:first-child a').focus();
+        }
+    });
 });
