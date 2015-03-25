@@ -178,10 +178,14 @@ GSA.navigation = new function() {
     }
 };
 
+GSA.carouselID = null;
+GSA.slideNum = null;
+
 GSA.modals_carousels = new function() {
     var modalTemplate = $('#modalView');
     var button = '';
     modalTemplate.modal({ show: false});
+
 
     this.modals = function () {
         modalTemplate.modal({ show: false}); // on load modal is not initiated
@@ -191,6 +195,14 @@ GSA.modals_carousels = new function() {
                 $('.modal-content').css('max-height', $(window).height() - 50);
                 button = $(this);
                 modalTemplate.modal('show');
+                if(GSA.carouselID == '#priorities-carousel'){var carouselName = 'priorities'} else { var carouselName = 'gsa-data'}
+                if(Modernizr.history){
+                    history.pushState({}, '', '#/'+carouselName+'/'+GSA.slideNum+'/'+$(this).find('h3').text());
+                }
+                else{
+                    window.location.hash = '#/'+$(this).find('h3').text();
+                }
+                $(document).trigger('newState');
             }
         });
 
@@ -239,9 +251,7 @@ GSA.modals_carousels = new function() {
 
     this.modalPrint = function() {
         $('.print').click(function(){
-
                 $( "#content-catcher" ).print();
-
                 return( false );
         });
     };
@@ -277,8 +287,10 @@ GSA.modals_carousels = new function() {
 
     this.slideFunction = function(carouselID) {
         $(carouselID).on('slide.bs.carousel', function (event) {
+            GSA.carouselID = carouselID;
             var button = $(event.relatedTarget);
             var slideNum = button.index();
+            GSA.slideNum = slideNum;
             $(carouselID).find('.icon-navigation').find('figure').removeClass('active-icon');
             $(carouselID).find('.icon-navigation').find('figure').eq(slideNum).addClass('active-icon');
             if(carouselID == '#priorities-carousel'){var carouselName = 'priorities'} else { var carouselName = 'gsa-data'}
@@ -290,7 +302,6 @@ GSA.modals_carousels = new function() {
             }
             $(document).trigger('newState');
         });
-
     };
 
     this.slideItemHeight = function(carouselID) {
