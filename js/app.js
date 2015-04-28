@@ -376,7 +376,7 @@ GSA.mobileMenu = new function() {
             }
         });
 
-        $('#mobile-header').on('click','.toggle-submenu',function() {
+        $('body').on('click','.toggle-submenu',function() {
             $(this).children('span').toggleClass('icon-arrow-up','icon-arrow-down');
             $(this).toggleClass('active');
             $(this).next('ul').slideToggle(300);
