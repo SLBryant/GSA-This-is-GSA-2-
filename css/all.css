@@ -573,7 +573,7 @@ Extenders
         border-right: 0; }
   #navigation.locked {
     top: 0;
-    width: 1090px;
+    width: 1170px;
     position: fixed;
     z-index: 9; }
     @media only screen and (max-width: 1200px) {
