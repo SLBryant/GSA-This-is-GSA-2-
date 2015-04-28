@@ -25,9 +25,9 @@
 }
 
 #header {
-  height:140px;
-  *height:136px;
-  width:990px;
+  @include desktops{
+    display: none;
+  }
   margin-left:0;
     > a > img {
       margin-bottom: 13px;
@@ -239,6 +239,9 @@
   font-size:.85em;
   padding:5px 0 5px 14px;
   margin:0 0 15px;
+  @include desktops {
+    display: none;
+  }
 }
 
 #breadcrumb a:link,#breadcrumb a:visited,#breadcrumb a:hover {

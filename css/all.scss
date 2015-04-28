@@ -3,6 +3,8 @@
 @import 'mixins';
 @import 'gsa-header-footer';
 @import 'navigation';
+@import 'mobile-nav';
+@import 'toggle';
 @import 'sections';
 @import 'carousels_and_modals';
 
@@ -19,7 +21,7 @@ body{
 .main-container{
   box-shadow:1px 1px 10px #999;
   background:#fff;
-  width:1090px!important; //IE 9 and below
+  //width:1090px!important; //IE 9 and below
   padding: 0 50px;
 }
 #superheader{
@@ -61,6 +63,12 @@ p {
       margin-right: 50px;
       padding-left: 25px;
       padding-right: 25px;
+      @include tablets {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
 }
 

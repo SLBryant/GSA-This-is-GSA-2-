@@ -272,10 +272,10 @@ Extenders
   z-index: 9000; }
 
 #header {
-  height: 140px;
-  *height: 136px;
-  width: 990px;
   margin-left: 0; }
+  @media only screen and (max-width: 992px) {
+    #header {
+      display: none; } }
   #header > a > img {
     margin-bottom: 13px; }
   #header li {
@@ -446,6 +446,9 @@ Extenders
   font-size: .85em;
   padding: 5px 0 5px 14px;
   margin: 0 0 15px; }
+  @media only screen and (max-width: 992px) {
+    #breadcrumb {
+      display: none; } }
 
 #breadcrumb a:link, #breadcrumb a:visited, #breadcrumb a:hover {
   text-decoration: underline; }
@@ -503,25 +506,44 @@ Extenders
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  border: 0; }
+  border: 0;
+  min-height: 30px; }
   #navigation .paddingFix {
     padding-left: 0;
     padding-right: 0; }
   #navigation ul {
     width: 100%; }
+    @media only screen and (max-width: 768px) {
+      #navigation ul {
+        margin: 0; } }
     #navigation ul li {
       width: 20%;
-      text-align: center; }
+      text-align: center;
+      float: left; }
+      @media only screen and (max-width: 768px) {
+        #navigation ul li {
+          width: 25%; } }
       #navigation ul li a {
         color: #fff;
         text-transform: uppercase;
-        border-right: 1px solid #fff; }
+        border-right: 1px solid #fff;
+        padding-left: 0;
+        padding-right: 0; }
         #navigation ul li a:hover, #navigation ul li a:active {
           background: none; }
       #navigation ul li#logo {
         border-right: 0;
         margin-left: -50px;
         width: 248px; }
+        @media only screen and (max-width: 1200px) {
+          #navigation ul li#logo {
+            width: 224px; } }
+        @media only screen and (max-width: 992px) {
+          #navigation ul li#logo {
+            width: 180px; } }
+        @media only screen and (max-width: 768px) {
+          #navigation ul li#logo {
+            display: none; } }
         #navigation ul li#logo a {
           background: #47a2e3;
           color: white !important;
@@ -539,6 +561,9 @@ Extenders
           padding-left: 90px;
           text-align: right;
           padding-right: 3px; }
+          @media only screen and (max-width: 992px) {
+            #navigation ul li#logo #thisIs-small {
+              padding-left: 20px; } }
       #navigation ul li.active a {
         background: #fff;
         color: #315369; }
@@ -551,6 +576,207 @@ Extenders
     width: 1090px;
     position: fixed;
     z-index: 9; }
+    @media only screen and (max-width: 1200px) {
+      #navigation.locked {
+        width: 970px; } }
+    @media only screen and (max-width: 992px) {
+      #navigation.locked {
+        width: 750px; } }
+    @media only screen and (max-width: 768px) {
+      #navigation.locked {
+        width: 100%; } }
+
+#mobile-header {
+  height: 85px; }
+  #mobile-header #mobile-logo {
+    max-width: 100px;
+    margin-top: -15px; }
+  #mobile-header #hamburger-toggle {
+    margin-top: 15px; }
+
+#slideout-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  border: 0;
+  background: beige;
+  min-height: 100%;
+  color: #fff;
+  overflow-y: auto; }
+  #slideout-menu h3 {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+    background: #fff; }
+  #slideout-menu a {
+    display: block;
+    color: #47a2e3; }
+    #slideout-menu a:hover {
+      text-decoration: none; }
+  #slideout-menu ul {
+    padding: 0; }
+  #slideout-menu > ul > li {
+    width: 100%;
+    border-bottom: 1px solid #eaeaea;
+    text-transform: uppercase;
+    position: relative; }
+    #slideout-menu > ul > li > a {
+      color: #47a2e3;
+      padding: 15px 10px; }
+      #slideout-menu > ul > li > a:hover, #slideout-menu > ul > li > a.active {
+        background: rgba(255, 255, 255, 0.5);
+        outline: none;
+        border: 0; }
+    #slideout-menu > ul > li span {
+      color: #ccc;
+      width: 15%;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.3);
+      right: 0;
+      top: 0;
+      text-align: center;
+      font-size: 35px;
+      font-size: 2.1875rem;
+      line-height: 2.2; }
+    #slideout-menu > ul > li > ul {
+      display: none;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background: rgba(255, 255, 255, 0.5); }
+      #slideout-menu > ul > li > ul > li {
+        width: 100%; }
+        #slideout-menu > ul > li > ul > li > a {
+          padding: 5px 15px;
+          color: #3366ff; }
+  #slideout-menu #mobile_search_form {
+    margin: 20px 0; }
+    #slideout-menu #mobile_search_form .form-group {
+      position: relative;
+      margin-left: 10px;
+      margin-right: 10px; }
+      #slideout-menu #mobile_search_form .form-group #mobile_query {
+        padding: 6px 50px 6px 10px;
+        width: 100%;
+        color: #333;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        border: 1px solid #eaeaea; }
+      #slideout-menu #mobile_search_form .form-group #submit-search {
+        position: absolute;
+        top: 1px;
+        bottom: 1px;
+        right: 0;
+        width: 50px;
+        background: #315369;
+        border: 0;
+        -webkit-border-radius: 0 3px 3px 0;
+        -moz-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0; }
+
+/* =============================================================================
+  MENU TOGGLE SWITCHES
+============================================================================= */
+/**
+ * Toggle Switch Globals
+ *
+ * All switches should take on the class `cmn-toggle-switch` as well as their
+ * variant that will give them unique properties. This class is an overview
+ * class that acts as a reset for all versions of the icon.
+ */
+.cmn-toggle-switch {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  height: 70px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s; }
+
+.cmn-toggle-switch:focus {
+  outline: none; }
+
+.cmn-toggle-switch span {
+  display: block;
+  position: absolute;
+  top: 31px;
+  left: 13px;
+  right: 13px;
+  height: 8px;
+  background: white; }
+
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  content: ""; }
+
+.cmn-toggle-switch span::before {
+  top: -18px; }
+
+.cmn-toggle-switch span::after {
+  bottom: -18px; }
+
+/**
+ * Style 2
+ * 
+ * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+ * down to center and transform into an "x".
+ */
+.cmn-toggle-switch__htx {
+  background-color: #47a2e3; }
+
+.cmn-toggle-switch__htx span {
+  transition: background 0s 0.3s; }
+
+.cmn-toggle-switch__htx span::before,
+.cmn-toggle-switch__htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s; }
+
+.cmn-toggle-switch__htx span::before {
+  transition-property: top, transform; }
+
+.cmn-toggle-switch__htx span::after {
+  transition-property: bottom, transform; }
+
+/* active state, i.e. menu open */
+.cmn-toggle-switch__htx.active {
+  background-color: #181e49; }
+
+.cmn-toggle-switch__htx.active span {
+  background: none; }
+
+.cmn-toggle-switch__htx.active span::before {
+  top: 0;
+  transform: rotate(45deg); }
+
+.cmn-toggle-switch__htx.active span::after {
+  bottom: 0;
+  transform: rotate(-45deg); }
+
+.cmn-toggle-switch__htx.active span::before,
+.cmn-toggle-switch__htx.active span::after {
+  transition-delay: 0s, 0.3s; }
 
 .section-block {
   padding: 40px 0; }
@@ -629,6 +855,8 @@ Extenders
     margin-top: 15px; }
   #welcome h4 {
     margin-top: 0; }
+  #welcome #welcome-media {
+    margin-bottom: 20px; }
 
 #priorities {
   background: #edf0f5; }
@@ -719,6 +947,9 @@ Extenders
     display: block;
     margin: 0;
     opacity: 0.3; }
+    @media only screen and (max-width: 768px) {
+      .icon-navigation figure {
+        padding: 0 1px; } }
     .icon-navigation figure:hover {
       opacity: 1; }
     .icon-navigation figure a {
@@ -747,28 +978,33 @@ Extenders
 
 #pad-left {
   margin-left: 150px; }
+  @media only screen and (max-width: 768px) {
+    #pad-left {
+      margin-left: 50px; } }
 
-.modal-lg .close {
-  position: absolute;
-  top: -15px;
-  z-index: 10;
-  right: -25px;
-  font-size: 27px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
-  width: 30px;
-  background: #fff;
-  border: 2px solid #333;
-  -o-transition: 300 all;
-  -ms-transition: 300 all;
-  -moz-transition: 300 all;
-  -webkit-transition: 300 all;
-  transition: 300 all; }
-  .modal-lg .close:hover {
-    opacity: 1;
-    border-color: #315369;
-    color: #315369; }
+.modal-lg {
+  max-width: 100%; }
+  .modal-lg .close {
+    position: absolute;
+    top: -15px;
+    z-index: 10;
+    right: -25px;
+    font-size: 27px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    width: 30px;
+    background: #fff;
+    border: 2px solid #333;
+    -o-transition: 300 all;
+    -ms-transition: 300 all;
+    -moz-transition: 300 all;
+    -webkit-transition: 300 all;
+    transition: 300 all; }
+    .modal-lg .close:hover {
+      opacity: 1;
+      border-color: #315369;
+      color: #315369; }
 
 .modal-content {
   padding: 0 25px;
@@ -818,6 +1054,10 @@ Extenders
   z-index: 9;
   background: #fff;
   border: 1px solid #eaeaea; }
+  @media only screen and (max-width: 768px) {
+    .print {
+      left: 5px;
+      top: 5px; } }
 
 .no-pad-left {
   padding-left: 0 !important; }
@@ -832,7 +1072,6 @@ body {
 .main-container {
   box-shadow: 1px 1px 10px #999;
   background: #fff;
-  width: 1090px !important;
   padding: 0 50px; }
 
 #superheader {
@@ -872,6 +1111,12 @@ p {
     margin-right: 50px;
     padding-left: 25px;
     padding-right: 25px; }
+    @media only screen and (max-width: 768px) {
+      .paddingless-row .paddingFix {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 10px;
+        padding-right: 10px; } }
 
 .larger-p {
   font-size: 22px;

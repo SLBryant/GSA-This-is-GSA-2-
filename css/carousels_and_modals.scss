@@ -48,6 +48,9 @@
     display: block;
     margin: 0;
     opacity: 0.3;
+      @include tablets {
+        padding: 0 1px;
+      }
     &:hover {
       opacity: 1;
     }
@@ -79,10 +82,14 @@
 }
 #pad-left {
   margin-left: 150px;
+  @include tablets{
+    margin-left: 50px;
+  }
 }
 
 // Modals
 .modal-lg {
+  max-width: 100%;
   .close {
     position: absolute;
     top: -15px;
@@ -169,6 +176,10 @@
   z-index: 9;
   background: #fff;
   border: 1px solid #eaeaea;
+  @include tablets {
+    left: 5px;
+    top: 5px;
+  }
 }
 .no-pad-left {
   padding-left: 0!important;
